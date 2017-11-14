@@ -1,0 +1,51 @@
+everdone	How often have you ever done any of the following with a computer? Do not count anything done in this class with Mr. Schatz.
+	1	Never
+	2	1 to 3 times
+	3	4 to 6 times
+	4	More than 6 times
+::
+multmed	Created multimedia presentations
+progcode	Written code using a programming language
+pub	Make a publication using desktop publishing
+discuss	Started own discussion group on Internet
+webtool	Create a web page with a tool
+webhand	Hand-coded a web page using HTML
+pubsite	Published a site on the Web
+createart	Created a piece of art
+designmod	Designed a model or drawing using a tool
+robotinv	Built a robot or created an invention
+simulate	Used a simulation to model real life data
+madedb	Made a database
+createmov	Created a digital movie
+createani	Created an animation or cartoon
+creategame	Created a computer game 
+createmus	Created a piece of music
+playvid	Played videogames
+playmuog	Played multi-user online games
+;;
+attitude	Indicate how much you agree or disagree with each statement below.
+	1	Strongly Disagree
+	2	Disgree
+	3	Somewhat Disagree
+	4	Somewhat Agree
+	5	Agree
+	6	Strongly Agree
+::
+learnmore	I would like to learn more about computers.
+feelconf	I feel confident about my ability to use computers.
+compsint	Computers are interesting to me.
+learnfun	Learning about what computers can do is fun.
+workwell	I am the kind of person who works well with computers.
+uncomfort	Learning about computers makes me feel uncomfortable.
+classes	I like the idea of taking computer classes.
+goodwith	I am good with computers. 
+knowimport	It is important to me that I am knowledgeable about computers. 
+nervous	I feel nervous when I use computers.
+;;
+%%;;
+none
+	everdone
+A:c1	Lego Activitity 1
+	attitude
+B:k1	Karel Activity 1
+	attitude

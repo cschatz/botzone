@@ -1,0 +1,2476 @@
+found 59 items
+<table class="questions">
+	<tr><td class='number'>1</td>
+	    <td colspan='2'><span class="prompt"><p>The Interactive C program below has some errors in it.  Change it to fix the errors:</p>
+<center><textarea name='*cdebugs;' class='textfield' cols='50' rows='7'>method main
+{
+   fd(A);
+   fd(C);
+   sleep(5.0)
+   allofff();
+}
+</textarea></center></span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>2</td>
+	    <td colspan='2'><span class="prompt"><p>The Interactive C program below has some errors in it.  Change it to fix the errors:</p>
+<center><textarea name='*cdebugs2;' class='textfield' cols='50' rows='10'>void main()
+{
+   while (digital(1) == 0);
+   {
+      fd(A);
+      fd C 
+   }
+   sleep();
+   alloff() 
+}
+</textarea></center></span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>3</td>
+	    <td colspan='2'><span class="prompt"><p>The Interactive C program below has some errors in it.  Change it to fix the errors:</p>
+<center><textarea name='*cdebugs3;' class='textfield' cols='50' rows='13'>void cmd()
+{
+	fd(a);
+}
+
+void main()
+{
+   while (digital(1) == 0)
+   {
+	cmd;
+   }
+   alloff() 
+}
+</textarea></center></span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>4</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your robot has this entire Interactive C program:</p>
+<div class="code">
+void multi()
+{
+	beep();
+	beep();
+}
+
+void main()
+{
+	multi();
+	multi();
+	multi();
+}
+</div>
+<p>What will the robot do when the program runs?  <b>Be specific.</b></p></span>
+	    <br/>
+<center><textarea name='*cfunc1;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>5</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your robot has this entire Interactive C program:</p>
+<div class="code">
+void mycmd()
+{
+	while (digital(1) == 0)
+	{
+		fd(A);
+		fd(C);
+	}
+}
+
+void main()
+{
+	beep();
+	mycmd();
+	beep();
+}
+</div>
+<p>What will this do when it runs?  Be as specific as possible.</p>
+<center><textarea name='*cfunc2;' class='textfield' cols='50' rows='5'>First, it will ____________________________________
+
+Then it will  ____________________________________
+
+Finally it will _____________________________________
+
+</textarea></center></span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>6</td>
+	    <td colspan='2'><span class="prompt"><p>Now, suppose your robot has this program:</p>
+<div class="code">
+void go()
+{
+	while (digital(2) == 1)
+	{
+		beep();
+	}
+}
+
+void main()
+{
+	beep();
+	go();
+}
+</div>
+<p>Suppose the robot is <b>already touching a wall</b> when this runs.  How many times will it beep?</span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='cfunc3;' value='once'></td><td>It will beep exactly once, no matter what happens.</td></tr><tr><td><input class='box' type='radio' name='cfunc3;' value='manyindef'></td><td>It will beep many times, and continue to beep no matter what happens.</td></tr><tr><td><input class='box' type='radio' name='cfunc3;' value='nothing'></td><td>It will not beep at all, no matter what happens.</td></tr><tr><td><input class='box' type='radio' name='cfunc3;' value='manyuntil'></td><td>It will beep many times, stopping when the robot is moved away from the wall.</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>7</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your robot has this entire Interactive C program:</p>
+<div class="code">
+void shape()
+{
+	fd(A);
+	fd(C);
+	sleep(2.0);
+	fd(A);
+	bk(C);
+	sleep(2.0);
+}
+
+void main()
+{
+	shape();
+	shape();
+}
+</div>
+<p>What will the robot do when the program runs?  <b>Be specific.</b></p></span>
+	    <br/>
+<center><textarea name='*cfunc4;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>8</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your robot has this entire Interactive C program:</p>
+<div class="code">
+void mycmd()
+{
+	while (digital(1) == 0)
+	{
+		fd(A);
+		bk(C);
+	}
+}
+
+void main()
+{
+	fd(A);
+	fd(C);
+	sleep(1.0);
+	mycmd();
+	beep();
+}
+</div>
+<p>What will this do when it runs?  Be as specific as possible.</p>
+<center><textarea name='*cfunc5;' class='textfield' cols='50' rows='5'>First, it will ____________________________________
+
+Then it will  ____________________________________
+
+Finally it will _____________________________________
+
+</textarea></center></span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>9</td>
+	    <td colspan='2'><span class="prompt"><p>Now, suppose your robot has this program:</p>
+<div class="code">
+void go()
+{
+	while (digital(2) == 1)
+	{
+		beep();
+	}
+}
+
+void main()
+{
+	go();
+}
+</div>
+<p>Suppose the robot is <b>already touching a wall</b> when this runs.  How many times will it beep?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='cfunc6;' value='once'></td><td>It will beep exactly once, no matter what happens.</td></tr><tr><td><input class='box' type='radio' name='cfunc6;' value='nothing'></td><td>It will not beep at all, no matter what happens.</td></tr><tr><td><input class='box' type='radio' name='cfunc6;' value='manyindef'></td><td>It will beep many times, and continue to beep no matter what happens.</td></tr><tr><td><input class='box' type='radio' name='cfunc6;' value='manyuntil'></td><td>It will beep many times, stopping when the robot is moved away from the wall.</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>10</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your robot has a touch sensor connected as sensor #1, and a program with this sequence of instructions:</p>
+<div class="code">
+if (digital(1) == 0)
+{
+	fd(A);
+	fd(C);
+	sleep(2.0);
+}
+alloff();
+beep();
+</div>
+<p>Describe in detail what the robot does when the program runs.</p></span>
+	    <br/>
+<center><textarea name='*cifcr;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>11</td>
+	    <td colspan='2'><span class="prompt"><p>Write a complete Interactive C program, <b>using an if statement</b>, for a robot to:</p>
+<ul>
+<li>If it starts touching a wall, move backwards for three seconds.</li>
+<li>If it does not start touching a wall, beep three times</li>
+</ul></span>
+	    <br/>
+<center><textarea name='*cifcr2;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>12</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your robot has this program:</p>
+<div class="code">
+void main()
+{
+	if (digital(2) == 1)
+	{
+		beep();
+	}
+}
+</div>
+<p>What Will happen when this program runs?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='cifmc;' value='yesmany'></td><td>If the bumper is being touched it beeps repeatedly.</td></tr><tr><td><input class='box' type='radio' name='cifmc;' value='noonce'></td><td>If the bumper is NOT being pressed it beeps exactly once.</td></tr><tr><td><input class='box' type='radio' name='cifmc;' value='yesonce'></td><td>If the bumper is being pressed it beeps exactly once</td></tr><tr><td><input class='box' type='radio' name='cifmc;' value='nomany'></td><td>If the bumper is NOT being touched it beeps repeatedly</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>13</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your robot has a light sensor as Sensor #1, and has this program:</p>
+<div class="code">
+void main()
+{
+	while (1==1)
+	{
+		fd(A);
+		fd(C);
+		if (light(1) > 750)
+		{
+			beep();
+		}
+	}
+}
+</div>
+<p>As the robot moves forward, it crosses patches of white and black.
+Which of these best describes how it behaves?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='cifmc2;' value='blonce'></td><td>It beeps once whenever it is on a black patch.</td></tr><tr><td><input class='box' type='radio' name='cifmc2;' value='blmany'></td><td>It beeps repeatedly whenever it is on a black patch.</td></tr><tr><td><input class='box' type='radio' name='cifmc2;' value='whmany'></td><td>It beeps repeatedly whenever it is on a white patch.</td></tr><tr><td><input class='box' type='radio' name='cifmc2;' value='whonce'></td><td>It beeps once whenever it is on a white patch.</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>14</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose you had a robot running this program - note that it is similar to many of
+the others, but with a <b>0</b> where we usually have <b>1</b>.</p>
+<div class="code">
+void main()
+{
+   while (digital(1) == 1);
+   {
+	beep();
+   }
+}
+</div>
+<p>What do you think this will do when it is run?  Does it depend what situation the robot is in?
+Be as specific as you can.</p></span>
+	    <br/>
+<center><textarea name='*cinterpwh;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>15</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your robot has this program:</p>
+<div class="code">
+void main()
+{
+   while (digital(1) == 1);
+   {
+	beep();
+   }
+   fd(A);
+   fd(C);
+}
+</div>
+<p>Describe the way the robot will behave in these two situations - be specific:</p>
+<center><textarea name='*cinterpwh2;' class='textfield' cols='50' rows='5'>(A) If it is already touching a wall when it starts.
+
+
+
+(B) If it is not touching a wall when it starts.
+
+
+</textarea></center></span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>16</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your robot has a touch sensor connected as sensor #1, and a program with this sequence of instructions:</p>
+<div class="code">
+beep();
+
+while (digital(1) == 0)
+{
+	beep();
+	fd(A);
+	fd(C);
+}
+
+alloff();
+</div>
+<p>Describe in detail what the robot does when the program runs.</p></span>
+	    <br/>
+<center><textarea name='*cwhilecr;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>17</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your robot has a touch sensor connected as sensor #1, and a program with this sequence of instructions:</p>
+<div class="code">
+while (digital(1) == 0)
+{
+	fd(A);
+	fd(C);
+}
+alloff();
+beep();
+</div>
+<p>Describe in detail what the robot does when the program runs.</p></span>
+	    <br/>
+<center><textarea name='*cwhilecr2;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>18</td>
+	    <td colspan='2'><span class="prompt"><p>Now, suppose it has this entire program:</p>
+<div class="code">
+void main()
+{
+  while (digital(1) == 0)
+  {
+	beep();
+  }
+}
+</div>
+<p>What does the robot do when this program runs?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='cwhilemc;' value='yesuntil'></td><td>It beeps repeatedly until the touch sensor is pressed, then stops.</td></tr><tr><td><input class='box' type='radio' name='cwhilemc;' value='yesonce'></td><td>It beeps once.</td></tr><tr><td><input class='box' type='radio' name='cwhilemc;' value='nountil'></td><td>It waits until the touch sensor is pressed, then beeps repeatedly.</td></tr><tr><td><input class='box' type='radio' name='cwhilemc;' value='nothing'></td><td>It does not do anything, no matter what happens.</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>19</td>
+	    <td colspan='2'><span class="prompt"><p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+   while (digital(1) == 0)
+   {
+      fd(A);
+      fd(C);
+   }
+   alloff();
+}
+</div>
+<p>What does the robot do when this program runs?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='cwhilemc2;' value='fwdtouch'></td><td>Move forward until the robot touches something, then stop.</td></tr><tr><td><input class='box' type='radio' name='cwhilemc2;' value='nothing'></td><td>The robot does not do anything.</td></tr><tr><td><input class='box' type='radio' name='cwhilemc2;' value='fwdshort'></td><td>Move forward for a short time, then stop.</td></tr><tr><td><input class='box' type='radio' name='cwhilemc2;' value='fwdindef'></td><td>Keep moving forward, even if it the robot touches something.</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>20</td>
+	    <td colspan='2'><span class="prompt"><p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+   while (digital(1) == 0)
+   {
+      fd(A);
+      fd(C);
+   }
+}
+</div>
+<p>What does the robot do when this program runs?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='cwhilemc3;' value='fwdindef'></td><td>Keep moving forward, even if it the robot touches something.</td></tr><tr><td><input class='box' type='radio' name='cwhilemc3;' value='nothing'></td><td>The robot does not do anything.</td></tr><tr><td><input class='box' type='radio' name='cwhilemc3;' value='fwdshort'></td><td>Move forward for a short time, then stop.</td></tr><tr><td><input class='box' type='radio' name='cwhilemc3;' value='fwdtouch'></td><td>Move forward until the robot touches something, then stop.</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>21</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your robot has this program:</p>
+<div class="code">
+void main()
+{
+	while (digital(2) == 1)
+	{
+		beep();
+	}
+}
+</div>
+<p>What Will happen when this program runs?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='cwhilemc4;' value='noonce'></td><td>If the bumper is NOT being pressed it beeps exactly once.</td></tr><tr><td><input class='box' type='radio' name='cwhilemc4;' value='yesmany'></td><td>If the bumper is being touched it beeps repeatedly.</td></tr><tr><td><input class='box' type='radio' name='cwhilemc4;' value='nomany'></td><td>If the bumper is NOT being touched it beeps repeatedly</td></tr><tr><td><input class='box' type='radio' name='cwhilemc4;' value='yesonce'></td><td>If the bumper is being pressed it beeps exactly once</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>22</td>
+	    <td colspan='2'><span class="prompt"><p>Write a complete Interactive C program for a robot to:</p>
+<ul>
+<li>Spin around (either right or left) until the front sensor hits something...</li>
+<li>Then, move backwards for 2 seconds</li>
+<li>Then, beep.</li>
+</ul></span>
+	    <br/>
+<center><textarea name='*cwhilepr;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>23</td>
+	    <td colspan='2'><span class="prompt"><p>Write a complete Interactive C program (using new commands if you want)for a robot to:</p>
+<ul>
+<li>Move forward until the front sensor hits something...</li>
+<li>Then, turn left for two seconds...</li>
+<li>Then, stop.</li>
+</ul></span>
+	    <br/>
+<center><textarea name='*cwhilepr2;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>24</td>
+	    <td colspan='2'><span class="prompt"><p>The Jeroo program below has some errors in it.  Change it to fix the errors:</p>
+<center><textarea name='*jdebugs;' class='textfield' cols='50' rows='7'>method main()
+{
+   Jeroo mary = new Jeroo (1, 1, SOUTH);
+   mary.hop();
+   mary hop();
+   mary.turn(LEFT)
+}
+</textarea></center></span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>25</td>
+	    <td colspan='2'><span class="prompt"><p>The Jeroo program below has some errors in it.  Change it to fix the errors:</p>
+<center><textarea name='*jdebugs2;' class='textfield' cols='50' rows='9'>method main()
+{
+   Jeroo mary = new Jeroo (1, 1, SOUTH);
+   while (!mary.isWater(AHEAD));
+   {
+      mary.hop();
+      mary.turn LEFT
+   }
+}
+</textarea></center></span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>26</td>
+	    <td colspan='2'><span class="prompt"><p>The Jeroo program below has some errors in it.  Change it to fix the errors:</p>
+<center><textarea name='*jdebugs3;' class='textfield' cols='50' rows='9'>method main()
+{
+   Jeroo mary = new Jeroo (3, 1, west);
+   while (!mary.isNet(AHEAD));
+   {
+      hop();
+   }
+   mary.turn(LEFT);
+}
+</textarea></center></span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>27</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	hop();
+	plant();
+	hop();
+	plant();
+	hop();
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(RIGHT);
+alice.sequence();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jfunc1:1-1' class='none' onClick="toggle('5;jfunc1:1-1', '5;jfunc1');"></td>
+    <td id='5;jfunc1:2-1' class='none' onClick="toggle('5;jfunc1:2-1', '5;jfunc1');"></td>
+    <td id='5;jfunc1:3-1' class='none' onClick="toggle('5;jfunc1:3-1', '5;jfunc1');"></td>
+    <td id='5;jfunc1:4-1' class='none' onClick="toggle('5;jfunc1:4-1', '5;jfunc1');"></td>
+    <td id='5;jfunc1:5-1' class='none' onClick="toggle('5;jfunc1:5-1', '5;jfunc1');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;jfunc1' value='' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>28</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	while (!isWater(AHEAD))
+	{
+		hop();
+	}	
+
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(LEFT);
+alice.sequence();
+alice.plant();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jfunc2:1-2' class='none' onClick="toggle('5;jfunc2:1-2', '5;jfunc2');"></td>
+    <td id='5;jfunc2:2-2' class='none' onClick="toggle('5;jfunc2:2-2', '5;jfunc2');"></td>
+    <td id='5;jfunc2:3-2' class='none' onClick="toggle('5;jfunc2:3-2', '5;jfunc2');"></td>
+    <td id='5;jfunc2:4-2' class='none' onClick="toggle('5;jfunc2:4-2', '5;jfunc2');"></td>
+    <td id='5;jfunc2:5-2' class='none' onClick="toggle('5;jfunc2:5-2', '5;jfunc2');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jfunc2:1-1' class='none' onClick="toggle('5;jfunc2:1-1', '5;jfunc2');"></td>
+    <td id='5;jfunc2:2-1' class='none' onClick="toggle('5;jfunc2:2-1', '5;jfunc2');"></td>
+    <td id='5;jfunc2:3-1' class='none' onClick="toggle('5;jfunc2:3-1', '5;jfunc2');"></td>
+    <td id='5;jfunc2:4-1' class='none' onClick="toggle('5;jfunc2:4-1', '5;jfunc2');"></td>
+    <td id='5;jfunc2:5-1' class='none' onClick="toggle('5;jfunc2:5-1', '5;jfunc2');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;jfunc2' value='' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>29</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	hop();
+	hop();
+	plant();
+	hop();
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(LEFT);
+alice.sequence();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jfunc4:1-1' class='none' onClick="toggle('5;jfunc4:1-1', '5;jfunc4');"></td>
+    <td id='5;jfunc4:2-1' class='none' onClick="toggle('5;jfunc4:2-1', '5;jfunc4');"></td>
+    <td id='5;jfunc4:3-1' class='none' onClick="toggle('5;jfunc4:3-1', '5;jfunc4');"></td>
+    <td id='5;jfunc4:4-1' class='none' onClick="toggle('5;jfunc4:4-1', '5;jfunc4');"></td>
+    <td id='5;jfunc4:5-1' class='none' onClick="toggle('5;jfunc4:5-1', '5;jfunc4');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;jfunc4' value='' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>30</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	while (!isWater(AHEAD))
+	{
+		hop();
+	}	
+
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(RIGHT);
+alice.plant();
+alice.sequence();
+alice.plant();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jfunc5:1-1' class='none' onClick="toggle('5;jfunc5:1-1', '5;jfunc5');"></td>
+    <td id='5;jfunc5:2-1' class='none' onClick="toggle('5;jfunc5:2-1', '5;jfunc5');"></td>
+    <td id='5;jfunc5:3-1' class='none' onClick="toggle('5;jfunc5:3-1', '5;jfunc5');"></td>
+    <td id='5;jfunc5:4-1' class='none' onClick="toggle('5;jfunc5:4-1', '5;jfunc5');"></td>
+    <td id='5;jfunc5:5-1' class='none' onClick="toggle('5;jfunc5:5-1', '5;jfunc5');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;jfunc5' value='' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>31</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	while (!isWater(AHEAD))
+	{
+		hop();
+		plant();
+	}	
+
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(LEFT);
+alice.sequence();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jfunc6:1-4' class='none' onClick="toggle('5;jfunc6:1-4', '5;jfunc6');"></td>
+    <td id='5;jfunc6:2-4' class='none' onClick="toggle('5;jfunc6:2-4', '5;jfunc6');"></td>
+    <td id='5;jfunc6:3-4' class='none' onClick="toggle('5;jfunc6:3-4', '5;jfunc6');"></td>
+    <td id='5;jfunc6:4-4' class='none' onClick="toggle('5;jfunc6:4-4', '5;jfunc6');"></td>
+    <td id='5;jfunc6:5-4' class='none' onClick="toggle('5;jfunc6:5-4', '5;jfunc6');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jfunc6:1-3' class='none' onClick="toggle('5;jfunc6:1-3', '5;jfunc6');"></td>
+    <td id='5;jfunc6:2-3' class='none' onClick="toggle('5;jfunc6:2-3', '5;jfunc6');"></td>
+    <td id='5;jfunc6:3-3' class='none' onClick="toggle('5;jfunc6:3-3', '5;jfunc6');"></td>
+    <td id='5;jfunc6:4-3' class='none' onClick="toggle('5;jfunc6:4-3', '5;jfunc6');"></td>
+    <td id='5;jfunc6:5-3' class='none' onClick="toggle('5;jfunc6:5-3', '5;jfunc6');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jfunc6:1-2' class='none' onClick="toggle('5;jfunc6:1-2', '5;jfunc6');"></td>
+    <td id='5;jfunc6:2-2' class='none' onClick="toggle('5;jfunc6:2-2', '5;jfunc6');"></td>
+    <td id='5;jfunc6:3-2' class='none' onClick="toggle('5;jfunc6:3-2', '5;jfunc6');"></td>
+    <td id='5;jfunc6:4-2' class='none' onClick="toggle('5;jfunc6:4-2', '5;jfunc6');"></td>
+    <td id='5;jfunc6:5-2' class='none' onClick="toggle('5;jfunc6:5-2', '5;jfunc6');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jfunc6:1-1' class='none' onClick="toggle('5;jfunc6:1-1', '5;jfunc6');"></td>
+    <td id='5;jfunc6:2-1' class='none' onClick="toggle('5;jfunc6:2-1', '5;jfunc6');"></td>
+    <td id='5;jfunc6:3-1' class='none' onClick="toggle('5;jfunc6:3-1', '5;jfunc6');"></td>
+    <td id='5;jfunc6:4-1' class='none' onClick="toggle('5;jfunc6:4-1', '5;jfunc6');"></td>
+    <td id='5;jfunc6:5-1' class='none' onClick="toggle('5;jfunc6:5-1', '5;jfunc6');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;jfunc6' value='' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>32</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose a Jeroo starts in this world:</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-5' class='none' onClick="toggle('start;-:1-5', 'start;-');"></td>
+    <td id='start;-:2-5' class='none' onClick="toggle('start;-:2-5', 'start;-');"></td>
+    <td id='start;-:3-5' class='none' onClick="toggle('start;-:3-5', 'start;-');"></td>
+    <td id='start;-:4-5' class='none' onClick="toggle('start;-:4-5', 'start;-');"></td>
+    <td id='start;-:5-5' class='none' onClick="toggle('start;-:5-5', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-4' class='none' onClick="toggle('start;-:1-4', 'start;-');"></td>
+    <td id='start;-:2-4' class='beeper' onClick="toggle('start;-:2-4', 'start;-');"></td>
+    <td id='start;-:3-4' class='none' onClick="toggle('start;-:3-4', 'start;-');"></td>
+    <td id='start;-:4-4' class='none' onClick="toggle('start;-:4-4', 'start;-');"></td>
+    <td id='start;-:5-4' class='none' onClick="toggle('start;-:5-4', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-3' class='none' onClick="toggle('start;-:1-3', 'start;-');"></td>
+    <td id='start;-:2-3' class='none' onClick="toggle('start;-:2-3', 'start;-');"></td>
+    <td id='start;-:3-3' class='none' onClick="toggle('start;-:3-3', 'start;-');"></td>
+    <td id='start;-:4-3' class='none' onClick="toggle('start;-:4-3', 'start;-');"></td>
+    <td id='start;-:5-3' class='none' onClick="toggle('start;-:5-3', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-2' class='none' onClick="toggle('start;-:1-2', 'start;-');"></td>
+    <td id='start;-:2-2' class='beeper' onClick="toggle('start;-:2-2', 'start;-');"></td>
+    <td id='start;-:3-2' class='none' onClick="toggle('start;-:3-2', 'start;-');"></td>
+    <td id='start;-:4-2' class='none' onClick="toggle('start;-:4-2', 'start;-');"></td>
+    <td id='start;-:5-2' class='none' onClick="toggle('start;-:5-2', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-1' class='none' onClick="toggle('start;-:1-1', 'start;-');"></td>
+    <td id='start;-:2-1' class='karel-N' onClick="toggle('start;-:2-1', 'start;-');"></td>
+    <td id='start;-:3-1' class='none' onClick="toggle('start;-:3-1', 'start;-');"></td>
+    <td id='start;-:4-1' class='none' onClick="toggle('start;-:4-1', 'start;-');"></td>
+    <td id='start;-:5-1' class='none' onClick="toggle('start;-:5-1', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*start;-' value='2-2.2-4.' size='80'>
+
+<br/>
+<p>Write a sequence of instructions, <b>using an if statement</b>,
+ that makes the world end up like this:</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-5' class='none' onClick="toggle('end;-:1-5', 'end;-');"></td>
+    <td id='end;-:2-5' class='beeper' onClick="toggle('end;-:2-5', 'end;-');"></td>
+    <td id='end;-:3-5' class='none' onClick="toggle('end;-:3-5', 'end;-');"></td>
+    <td id='end;-:4-5' class='none' onClick="toggle('end;-:4-5', 'end;-');"></td>
+    <td id='end;-:5-5' class='none' onClick="toggle('end;-:5-5', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-4' class='none' onClick="toggle('end;-:1-4', 'end;-');"></td>
+    <td id='end;-:2-4' class='beeper' onClick="toggle('end;-:2-4', 'end;-');"></td>
+    <td id='end;-:3-4' class='none' onClick="toggle('end;-:3-4', 'end;-');"></td>
+    <td id='end;-:4-4' class='none' onClick="toggle('end;-:4-4', 'end;-');"></td>
+    <td id='end;-:5-4' class='none' onClick="toggle('end;-:5-4', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-3' class='none' onClick="toggle('end;-:1-3', 'end;-');"></td>
+    <td id='end;-:2-3' class='beeper' onClick="toggle('end;-:2-3', 'end;-');"></td>
+    <td id='end;-:3-3' class='none' onClick="toggle('end;-:3-3', 'end;-');"></td>
+    <td id='end;-:4-3' class='none' onClick="toggle('end;-:4-3', 'end;-');"></td>
+    <td id='end;-:5-3' class='none' onClick="toggle('end;-:5-3', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-2' class='none' onClick="toggle('end;-:1-2', 'end;-');"></td>
+    <td id='end;-:2-2' class='beeper' onClick="toggle('end;-:2-2', 'end;-');"></td>
+    <td id='end;-:3-2' class='none' onClick="toggle('end;-:3-2', 'end;-');"></td>
+    <td id='end;-:4-2' class='none' onClick="toggle('end;-:4-2', 'end;-');"></td>
+    <td id='end;-:5-2' class='none' onClick="toggle('end;-:5-2', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-1' class='none' onClick="toggle('end;-:1-1', 'end;-');"></td>
+    <td id='end;-:2-1' class='none' onClick="toggle('end;-:2-1', 'end;-');"></td>
+    <td id='end;-:3-1' class='none' onClick="toggle('end;-:3-1', 'end;-');"></td>
+    <td id='end;-:4-1' class='none' onClick="toggle('end;-:4-1', 'end;-');"></td>
+    <td id='end;-:5-1' class='none' onClick="toggle('end;-:5-1', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*end;-' value='2-2.2-3.2-4.2-5.' size='80'>
+</span>
+	    <br/>
+<center><textarea name='*jifcr;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>33</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+if (!mary.isFlower(LEFT))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>and that she starts in this world:</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='mcstart;-:1-2' class='beeper' onClick="toggle('mcstart;-:1-2', 'mcstart;-');"></td>
+    <td id='mcstart;-:2-2' class='beeper' onClick="toggle('mcstart;-:2-2', 'mcstart;-');"></td>
+    <td id='mcstart;-:3-2' class='beeper' onClick="toggle('mcstart;-:3-2', 'mcstart;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='mcstart;-:1-1' class='karel-E' onClick="toggle('mcstart;-:1-1', 'mcstart;-');"></td>
+    <td id='mcstart;-:2-1' class='none' onClick="toggle('mcstart;-:2-1', 'mcstart;-');"></td>
+    <td id='mcstart;-:3-1' class='none' onClick="toggle('mcstart;-:3-1', 'mcstart;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*mcstart;-' value='1-2.2-2.3-2.' size='80'>
+
+<p>Which of the pictures below shows where flowers would be after this program runs?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='jifmc;' value='all'></td><td><table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-2' class='beeper' onClick="toggle('manswer;-:1-2', 'manswer;-');"></td>
+    <td id='manswer;-:2-2' class='beeper' onClick="toggle('manswer;-:2-2', 'manswer;-');"></td>
+    <td id='manswer;-:3-2' class='beeper' onClick="toggle('manswer;-:3-2', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-1' class='beeper' onClick="toggle('manswer;-:1-1', 'manswer;-');"></td>
+    <td id='manswer;-:2-1' class='beeper' onClick="toggle('manswer;-:2-1', 'manswer;-');"></td>
+    <td id='manswer;-:3-1' class='beeper' onClick="toggle('manswer;-:3-1', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*manswer;-' value='1-2.2-2.3-2.1-1.2-1.3-1.' size='80'>
+</td></tr><tr><td><input class='box' type='radio' name='jifmc;' value='first'></td><td><table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-2' class='beeper' onClick="toggle('manswer;-:1-2', 'manswer;-');"></td>
+    <td id='manswer;-:2-2' class='beeper' onClick="toggle('manswer;-:2-2', 'manswer;-');"></td>
+    <td id='manswer;-:3-2' class='beeper' onClick="toggle('manswer;-:3-2', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-1' class='beeper' onClick="toggle('manswer;-:1-1', 'manswer;-');"></td>
+    <td id='manswer;-:2-1' class='none' onClick="toggle('manswer;-:2-1', 'manswer;-');"></td>
+    <td id='manswer;-:3-1' class='none' onClick="toggle('manswer;-:3-1', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*manswer;-' value='1-2.2-2.3-2.1-1.' size='80'>
+</td></tr><tr><td><input class='box' type='radio' name='jifmc;' value='notfirst'></td><td><table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-2' class='beeper' onClick="toggle('manswer;-:1-2', 'manswer;-');"></td>
+    <td id='manswer;-:2-2' class='beeper' onClick="toggle('manswer;-:2-2', 'manswer;-');"></td>
+    <td id='manswer;-:3-2' class='beeper' onClick="toggle('manswer;-:3-2', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-1' class='none' onClick="toggle('manswer;-:1-1', 'manswer;-');"></td>
+    <td id='manswer;-:2-1' class='beeper' onClick="toggle('manswer;-:2-1', 'manswer;-');"></td>
+    <td id='manswer;-:3-1' class='beeper' onClick="toggle('manswer;-:3-1', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*manswer;-' value='1-2.2-2.3-2.2-1.3-1.' size='80'>
+</td></tr><tr><td><input class='box' type='radio' name='jifmc;' value='middle'></td><td><table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-2' class='beeper' onClick="toggle('manswer;-:1-2', 'manswer;-');"></td>
+    <td id='manswer;-:2-2' class='beeper' onClick="toggle('manswer;-:2-2', 'manswer;-');"></td>
+    <td id='manswer;-:3-2' class='beeper' onClick="toggle('manswer;-:3-2', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-1' class='none' onClick="toggle('manswer;-:1-1', 'manswer;-');"></td>
+    <td id='manswer;-:2-1' class='beeper' onClick="toggle('manswer;-:2-1', 'manswer;-');"></td>
+    <td id='manswer;-:3-1' class='none' onClick="toggle('manswer;-:3-1', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*manswer;-' value='1-2.2-2.3-2.2-1.' size='80'>
+</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>34</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isWater(AHEAD))
+{
+	mary.hop();  
+	if (mary.isFlower(RIGHT))
+	{
+		mary.plant();
+	}
+}
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jifseq:1-1' class='none' onClick="toggle('5;jifseq:1-1', '5;jifseq');"></td>
+    <td id='5;jifseq:2-1' class='none' onClick="toggle('5;jifseq:2-1', '5;jifseq');"></td>
+    <td id='5;jifseq:3-1' class='none' onClick="toggle('5;jifseq:3-1', '5;jifseq');"></td>
+    <td id='5;jifseq:4-1' class='none' onClick="toggle('5;jifseq:4-1', '5;jifseq');"></td>
+    <td id='5;jifseq:5-1' class='none' onClick="toggle('5;jifseq:5-1', '5;jifseq');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;jifseq' value='2-5.4-5.2-3.4-3.5-3.' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>35</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose a Jeroo is facing a net.  What kappens if the Jeroo is given a
+<span class="code">hop()</span> command?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='jnetmove;' value='moves'></td><td>The Jeroo moves forward, successfully.</td></tr><tr><td><input class='box' type='radio' name='jnetmove;' value='nothing'></td><td>Nothing at all happens.  The Jeroo does not follow the command.</td></tr><tr><td><input class='box' type='radio' name='jnetmove;' value='back'></td><td>The Jeroo moves backward, away from the net.</td></tr><tr><td><input class='box' type='radio' name='jnetmove;' value='error'></td><td>The Jeroo tries to move forward, causing an error.</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>36</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose a Jeroo starts in this world:</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-3' class='none' onClick="toggle('start;-:1-3', 'start;-');"></td>
+    <td id='start;-:2-3' class='none' onClick="toggle('start;-:2-3', 'start;-');"></td>
+    <td id='start;-:3-3' class='none' onClick="toggle('start;-:3-3', 'start;-');"></td>
+    <td id='start;-:4-3' class='none' onClick="toggle('start;-:4-3', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-2' class='karel-N' onClick="toggle('start;-:1-2', 'start;-');"></td>
+    <td id='start;-:2-2' class='none' onClick="toggle('start;-:2-2', 'start;-');"></td>
+    <td id='start;-:3-2' class='none' onClick="toggle('start;-:3-2', 'start;-');"></td>
+    <td id='start;-:4-2' class='none' onClick="toggle('start;-:4-2', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-1' class='none' onClick="toggle('start;-:1-1', 'start;-');"></td>
+    <td id='start;-:2-1' class='none' onClick="toggle('start;-:2-1', 'start;-');"></td>
+    <td id='start;-:3-1' class='none' onClick="toggle('start;-:3-1', 'start;-');"></td>
+    <td id='start;-:4-1' class='none' onClick="toggle('start;-:4-1', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*start;-' value='' size='80'>
+
+<br/>
+<p>Write a sequence of instructions that makes the world end up like this:</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-3' class='none' onClick="toggle('end;-:1-3', 'end;-');"></td>
+    <td id='end;-:2-3' class='none' onClick="toggle('end;-:2-3', 'end;-');"></td>
+    <td id='end;-:3-3' class='none' onClick="toggle('end;-:3-3', 'end;-');"></td>
+    <td id='end;-:4-3' class='none' onClick="toggle('end;-:4-3', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-2' class='none' onClick="toggle('end;-:1-2', 'end;-');"></td>
+    <td id='end;-:2-2' class='beeper' onClick="toggle('end;-:2-2', 'end;-');"></td>
+    <td id='end;-:3-2' class='beeper' onClick="toggle('end;-:3-2', 'end;-');"></td>
+    <td id='end;-:4-2' class='beeper' onClick="toggle('end;-:4-2', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-1' class='none' onClick="toggle('end;-:1-1', 'end;-');"></td>
+    <td id='end;-:2-1' class='none' onClick="toggle('end;-:2-1', 'end;-');"></td>
+    <td id='end;-:3-1' class='none' onClick="toggle('end;-:3-1', 'end;-');"></td>
+    <td id='end;-:4-1' class='none' onClick="toggle('end;-:4-1', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*end;-' value='2-2.3-2.4-2.3-2.' size='80'>
+</span>
+	    <br/>
+<center><textarea name='*jseqcr;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>37</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose a Jeroo starts in this world:</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-3' class='karel-N' onClick="toggle('start;-:1-3', 'start;-');"></td>
+    <td id='start;-:2-3' class='none' onClick="toggle('start;-:2-3', 'start;-');"></td>
+    <td id='start;-:3-3' class='none' onClick="toggle('start;-:3-3', 'start;-');"></td>
+    <td id='start;-:4-3' class='none' onClick="toggle('start;-:4-3', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-2' class='none' onClick="toggle('start;-:1-2', 'start;-');"></td>
+    <td id='start;-:2-2' class='none' onClick="toggle('start;-:2-2', 'start;-');"></td>
+    <td id='start;-:3-2' class='none' onClick="toggle('start;-:3-2', 'start;-');"></td>
+    <td id='start;-:4-2' class='none' onClick="toggle('start;-:4-2', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-1' class='none' onClick="toggle('start;-:1-1', 'start;-');"></td>
+    <td id='start;-:2-1' class='none' onClick="toggle('start;-:2-1', 'start;-');"></td>
+    <td id='start;-:3-1' class='none' onClick="toggle('start;-:3-1', 'start;-');"></td>
+    <td id='start;-:4-1' class='none' onClick="toggle('start;-:4-1', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*start;-' value='' size='80'>
+
+<br/>
+<p>Write a sequence of instructions, <b>using a while statement</b>,
+ that makes the world end up like this:</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-3' class='none' onClick="toggle('end;-:1-3', 'end;-');"></td>
+    <td id='end;-:2-3' class='beeper' onClick="toggle('end;-:2-3', 'end;-');"></td>
+    <td id='end;-:3-3' class='beeper' onClick="toggle('end;-:3-3', 'end;-');"></td>
+    <td id='end;-:4-3' class='beeper' onClick="toggle('end;-:4-3', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-2' class='none' onClick="toggle('end;-:1-2', 'end;-');"></td>
+    <td id='end;-:2-2' class='none' onClick="toggle('end;-:2-2', 'end;-');"></td>
+    <td id='end;-:3-2' class='none' onClick="toggle('end;-:3-2', 'end;-');"></td>
+    <td id='end;-:4-2' class='none' onClick="toggle('end;-:4-2', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-1' class='none' onClick="toggle('end;-:1-1', 'end;-');"></td>
+    <td id='end;-:2-1' class='none' onClick="toggle('end;-:2-1', 'end;-');"></td>
+    <td id='end;-:3-1' class='none' onClick="toggle('end;-:3-1', 'end;-');"></td>
+    <td id='end;-:4-1' class='none' onClick="toggle('end;-:4-1', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*end;-' value='2-3.3-3.4-3.' size='80'>
+</span>
+	    <br/>
+<center><textarea name='*jseqcr2;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>38</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose a Jeroo starts in this world:</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-4' class='none' onClick="toggle('start;-:1-4', 'start;-');"></td>
+    <td id='start;-:2-4' class='none' onClick="toggle('start;-:2-4', 'start;-');"></td>
+    <td id='start;-:3-4' class='none' onClick="toggle('start;-:3-4', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-3' class='none' onClick="toggle('start;-:1-3', 'start;-');"></td>
+    <td id='start;-:2-3' class='none' onClick="toggle('start;-:2-3', 'start;-');"></td>
+    <td id='start;-:3-3' class='none' onClick="toggle('start;-:3-3', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-2' class='none' onClick="toggle('start;-:1-2', 'start;-');"></td>
+    <td id='start;-:2-2' class='none' onClick="toggle('start;-:2-2', 'start;-');"></td>
+    <td id='start;-:3-2' class='none' onClick="toggle('start;-:3-2', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-1' class='none' onClick="toggle('start;-:1-1', 'start;-');"></td>
+    <td id='start;-:2-1' class='karel-N' onClick="toggle('start;-:2-1', 'start;-');"></td>
+    <td id='start;-:3-1' class='none' onClick="toggle('start;-:3-1', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*start;-' value='' size='80'>
+
+<br/>
+<p>Write a sequence of instructions, <b>using a while statement</b>,
+ that makes the world end up like this:</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-3' class='none' onClick="toggle('end;-:1-3', 'end;-');"></td>
+    <td id='end;-:2-3' class='beeper' onClick="toggle('end;-:2-3', 'end;-');"></td>
+    <td id='end;-:3-3' class='none' onClick="toggle('end;-:3-3', 'end;-');"></td>
+    <td id='end;-:4-3' class='none' onClick="toggle('end;-:4-3', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-2' class='none' onClick="toggle('end;-:1-2', 'end;-');"></td>
+    <td id='end;-:2-2' class='beeper' onClick="toggle('end;-:2-2', 'end;-');"></td>
+    <td id='end;-:3-2' class='none' onClick="toggle('end;-:3-2', 'end;-');"></td>
+    <td id='end;-:4-2' class='none' onClick="toggle('end;-:4-2', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-1' class='none' onClick="toggle('end;-:1-1', 'end;-');"></td>
+    <td id='end;-:2-1' class='beeper' onClick="toggle('end;-:2-1', 'end;-');"></td>
+    <td id='end;-:3-1' class='none' onClick="toggle('end;-:3-1', 'end;-');"></td>
+    <td id='end;-:4-1' class='none' onClick="toggle('end;-:4-1', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*end;-' value='2-1.2-2.2-3.1-4.' size='80'>
+</span>
+	    <br/>
+<center><textarea name='*jseqcr3;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>39</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+bob.hop();
+bob.plant();
+bob.turn(LEFT);
+bob.hop(2);
+bob.turn(RIGHT);
+bob.hop();
+bob.plant();
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jseqgrid:1-3' class='none' onClick="toggle('5;jseqgrid:1-3', '5;jseqgrid');"></td>
+    <td id='5;jseqgrid:2-3' class='none' onClick="toggle('5;jseqgrid:2-3', '5;jseqgrid');"></td>
+    <td id='5;jseqgrid:3-3' class='none' onClick="toggle('5;jseqgrid:3-3', '5;jseqgrid');"></td>
+    <td id='5;jseqgrid:4-3' class='none' onClick="toggle('5;jseqgrid:4-3', '5;jseqgrid');"></td>
+    <td id='5;jseqgrid:5-3' class='none' onClick="toggle('5;jseqgrid:5-3', '5;jseqgrid');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jseqgrid:1-2' class='none' onClick="toggle('5;jseqgrid:1-2', '5;jseqgrid');"></td>
+    <td id='5;jseqgrid:2-2' class='none' onClick="toggle('5;jseqgrid:2-2', '5;jseqgrid');"></td>
+    <td id='5;jseqgrid:3-2' class='none' onClick="toggle('5;jseqgrid:3-2', '5;jseqgrid');"></td>
+    <td id='5;jseqgrid:4-2' class='none' onClick="toggle('5;jseqgrid:4-2', '5;jseqgrid');"></td>
+    <td id='5;jseqgrid:5-2' class='none' onClick="toggle('5;jseqgrid:5-2', '5;jseqgrid');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jseqgrid:1-1' class='none' onClick="toggle('5;jseqgrid:1-1', '5;jseqgrid');"></td>
+    <td id='5;jseqgrid:2-1' class='none' onClick="toggle('5;jseqgrid:2-1', '5;jseqgrid');"></td>
+    <td id='5;jseqgrid:3-1' class='none' onClick="toggle('5;jseqgrid:3-1', '5;jseqgrid');"></td>
+    <td id='5;jseqgrid:4-1' class='none' onClick="toggle('5;jseqgrid:4-1', '5;jseqgrid');"></td>
+    <td id='5;jseqgrid:5-1' class='none' onClick="toggle('5;jseqgrid:5-1', '5;jseqgrid');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;jseqgrid' value='' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>40</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+bob.hop();
+bob.turn(LEFT);
+bob.turn(LEFT);
+bob.hop(2);
+bob.plant();
+bob.hop();
+bob.plant();
+</div>
+<p>On the world, place beepers where they would end up when this program runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jseqgrid2:1-3' class='none' onClick="toggle('5;jseqgrid2:1-3', '5;jseqgrid2');"></td>
+    <td id='5;jseqgrid2:2-3' class='none' onClick="toggle('5;jseqgrid2:2-3', '5;jseqgrid2');"></td>
+    <td id='5;jseqgrid2:3-3' class='none' onClick="toggle('5;jseqgrid2:3-3', '5;jseqgrid2');"></td>
+    <td id='5;jseqgrid2:4-3' class='none' onClick="toggle('5;jseqgrid2:4-3', '5;jseqgrid2');"></td>
+    <td id='5;jseqgrid2:5-3' class='none' onClick="toggle('5;jseqgrid2:5-3', '5;jseqgrid2');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jseqgrid2:1-2' class='none' onClick="toggle('5;jseqgrid2:1-2', '5;jseqgrid2');"></td>
+    <td id='5;jseqgrid2:2-2' class='none' onClick="toggle('5;jseqgrid2:2-2', '5;jseqgrid2');"></td>
+    <td id='5;jseqgrid2:3-2' class='none' onClick="toggle('5;jseqgrid2:3-2', '5;jseqgrid2');"></td>
+    <td id='5;jseqgrid2:4-2' class='none' onClick="toggle('5;jseqgrid2:4-2', '5;jseqgrid2');"></td>
+    <td id='5;jseqgrid2:5-2' class='none' onClick="toggle('5;jseqgrid2:5-2', '5;jseqgrid2');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jseqgrid2:1-1' class='none' onClick="toggle('5;jseqgrid2:1-1', '5;jseqgrid2');"></td>
+    <td id='5;jseqgrid2:2-1' class='none' onClick="toggle('5;jseqgrid2:2-1', '5;jseqgrid2');"></td>
+    <td id='5;jseqgrid2:3-1' class='none' onClick="toggle('5;jseqgrid2:3-1', '5;jseqgrid2');"></td>
+    <td id='5;jseqgrid2:4-1' class='none' onClick="toggle('5;jseqgrid2:4-1', '5;jseqgrid2');"></td>
+    <td id='5;jseqgrid2:5-1' class='none' onClick="toggle('5;jseqgrid2:5-1', '5;jseqgrid2');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;jseqgrid2' value='' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>41</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+mary.hop();
+mary.plant();
+while (!mary.isWater(AHEAD))
+{
+  mary.hop();
+}
+mary.plant();
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jwhilegr:1-2' class='none' onClick="toggle('5;jwhilegr:1-2', '5;jwhilegr');"></td>
+    <td id='5;jwhilegr:2-2' class='none' onClick="toggle('5;jwhilegr:2-2', '5;jwhilegr');"></td>
+    <td id='5;jwhilegr:3-2' class='none' onClick="toggle('5;jwhilegr:3-2', '5;jwhilegr');"></td>
+    <td id='5;jwhilegr:4-2' class='none' onClick="toggle('5;jwhilegr:4-2', '5;jwhilegr');"></td>
+    <td id='5;jwhilegr:5-2' class='none' onClick="toggle('5;jwhilegr:5-2', '5;jwhilegr');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jwhilegr:1-1' class='none' onClick="toggle('5;jwhilegr:1-1', '5;jwhilegr');"></td>
+    <td id='5;jwhilegr:2-1' class='none' onClick="toggle('5;jwhilegr:2-1', '5;jwhilegr');"></td>
+    <td id='5;jwhilegr:3-1' class='none' onClick="toggle('5;jwhilegr:3-1', '5;jwhilegr');"></td>
+    <td id='5;jwhilegr:4-1' class='none' onClick="toggle('5;jwhilegr:4-1', '5;jwhilegr');"></td>
+    <td id='5;jwhilegr:5-1' class='none' onClick="toggle('5;jwhilegr:5-1', '5;jwhilegr');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;jwhilegr' value='' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>42</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+mary.hop();
+while (mary.isFlower(LEFT))
+{
+	mary.plant();
+	mary.hop();  
+}
+mary.plant();
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jwhilegr2:1-2' class='none' onClick="toggle('5;jwhilegr2:1-2', '5;jwhilegr2');"></td>
+    <td id='5;jwhilegr2:2-2' class='none' onClick="toggle('5;jwhilegr2:2-2', '5;jwhilegr2');"></td>
+    <td id='5;jwhilegr2:3-2' class='none' onClick="toggle('5;jwhilegr2:3-2', '5;jwhilegr2');"></td>
+    <td id='5;jwhilegr2:4-2' class='none' onClick="toggle('5;jwhilegr2:4-2', '5;jwhilegr2');"></td>
+    <td id='5;jwhilegr2:5-2' class='none' onClick="toggle('5;jwhilegr2:5-2', '5;jwhilegr2');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jwhilegr2:1-1' class='none' onClick="toggle('5;jwhilegr2:1-1', '5;jwhilegr2');"></td>
+    <td id='5;jwhilegr2:2-1' class='none' onClick="toggle('5;jwhilegr2:2-1', '5;jwhilegr2');"></td>
+    <td id='5;jwhilegr2:3-1' class='none' onClick="toggle('5;jwhilegr2:3-1', '5;jwhilegr2');"></td>
+    <td id='5;jwhilegr2:4-1' class='none' onClick="toggle('5;jwhilegr2:4-1', '5;jwhilegr2');"></td>
+    <td id='5;jwhilegr2:5-1' class='none' onClick="toggle('5;jwhilegr2:5-1', '5;jwhilegr2');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;jwhilegr2' value='3-3.3-4.' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>43</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+while (mary.isWater(LEFT))
+{
+	mary.hop();  
+}
+mary.turn(RIGHT);
+while (mary.isWater(LEFT))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jwhilegr3:1-1' class='none' onClick="toggle('5;jwhilegr3:1-1', '5;jwhilegr3');"></td>
+    <td id='5;jwhilegr3:2-1' class='none' onClick="toggle('5;jwhilegr3:2-1', '5;jwhilegr3');"></td>
+    <td id='5;jwhilegr3:3-1' class='none' onClick="toggle('5;jwhilegr3:3-1', '5;jwhilegr3');"></td>
+    <td id='5;jwhilegr3:4-1' class='none' onClick="toggle('5;jwhilegr3:4-1', '5;jwhilegr3');"></td>
+    <td id='5;jwhilegr3:5-1' class='none' onClick="toggle('5;jwhilegr3:5-1', '5;jwhilegr3');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;jwhilegr3' value='' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>44</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isWater(LEFT))
+{
+	mary.hop();  
+}
+mary.turn(LEFT);
+while (mary.isWater(RIGHT))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jwhilegr3a:1-1' class='none' onClick="toggle('5;jwhilegr3a:1-1', '5;jwhilegr3a');"></td>
+    <td id='5;jwhilegr3a:2-1' class='none' onClick="toggle('5;jwhilegr3a:2-1', '5;jwhilegr3a');"></td>
+    <td id='5;jwhilegr3a:3-1' class='none' onClick="toggle('5;jwhilegr3a:3-1', '5;jwhilegr3a');"></td>
+    <td id='5;jwhilegr3a:4-1' class='none' onClick="toggle('5;jwhilegr3a:4-1', '5;jwhilegr3a');"></td>
+    <td id='5;jwhilegr3a:5-1' class='none' onClick="toggle('5;jwhilegr3a:5-1', '5;jwhilegr3a');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;jwhilegr3a' value='' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>45</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isWater(AHEAD))
+{
+	mary.hop();  
+}
+mary.turn(RIGHT);
+while (mary.isWater(LEFT))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;jwhilegr4:1-1' class='none' onClick="toggle('5;jwhilegr4:1-1', '5;jwhilegr4');"></td>
+    <td id='5;jwhilegr4:2-1' class='none' onClick="toggle('5;jwhilegr4:2-1', '5;jwhilegr4');"></td>
+    <td id='5;jwhilegr4:3-1' class='none' onClick="toggle('5;jwhilegr4:3-1', '5;jwhilegr4');"></td>
+    <td id='5;jwhilegr4:4-1' class='none' onClick="toggle('5;jwhilegr4:4-1', '5;jwhilegr4');"></td>
+    <td id='5;jwhilegr4:5-1' class='none' onClick="toggle('5;jwhilegr4:5-1', '5;jwhilegr4');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;jwhilegr4' value='' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>46</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isNet(AHEAD))
+{
+	mary.plant();
+	mary.hop();  
+}
+</div>
+<p>and that she starts in this world:</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='mcstart;-:1-1' class='karel-E' onClick="toggle('mcstart;-:1-1', 'mcstart;-');"></td>
+    <td id='mcstart;-:2-1' class='none' onClick="toggle('mcstart;-:2-1', 'mcstart;-');"></td>
+    <td id='mcstart;-:3-1' class='none' onClick="toggle('mcstart;-:3-1', 'mcstart;-');"></td>
+    <td id='mcstart;-:4-1' class='none' onClick="toggle('mcstart;-:4-1', 'mcstart;-');"></td>
+    <td id='mcstart;-:5-1' class='net' onClick="toggle('mcstart;-:5-1', 'mcstart;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*mcstart;-' value='' size='80'>
+
+<p>Which of the pictures below shows where flowers would be after this program runs?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='jwhilemc;' value='none'></td><td><table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-1' class='none' onClick="toggle('manswer;-:1-1', 'manswer;-');"></td>
+    <td id='manswer;-:2-1' class='none' onClick="toggle('manswer;-:2-1', 'manswer;-');"></td>
+    <td id='manswer;-:3-1' class='none' onClick="toggle('manswer;-:3-1', 'manswer;-');"></td>
+    <td id='manswer;-:4-1' class='none' onClick="toggle('manswer;-:4-1', 'manswer;-');"></td>
+    <td id='manswer;-:5-1' class='net' onClick="toggle('manswer;-:5-1', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*manswer;-' value='' size='80'>
+</td></tr><tr><td><input class='box' type='radio' name='jwhilemc;' value='notlast'></td><td><table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-1' class='beeper' onClick="toggle('manswer;-:1-1', 'manswer;-');"></td>
+    <td id='manswer;-:2-1' class='beeper' onClick="toggle('manswer;-:2-1', 'manswer;-');"></td>
+    <td id='manswer;-:3-1' class='beeper' onClick="toggle('manswer;-:3-1', 'manswer;-');"></td>
+    <td id='manswer;-:4-1' class='none' onClick="toggle('manswer;-:4-1', 'manswer;-');"></td>
+    <td id='manswer;-:5-1' class='net' onClick="toggle('manswer;-:5-1', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*manswer;-' value='1-1.2-1.3-1.' size='80'>
+</td></tr><tr><td><input class='box' type='radio' name='jwhilemc;' value='notfirst'></td><td><table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-1' class='none' onClick="toggle('manswer;-:1-1', 'manswer;-');"></td>
+    <td id='manswer;-:2-1' class='beeper' onClick="toggle('manswer;-:2-1', 'manswer;-');"></td>
+    <td id='manswer;-:3-1' class='beeper' onClick="toggle('manswer;-:3-1', 'manswer;-');"></td>
+    <td id='manswer;-:4-1' class='beeper' onClick="toggle('manswer;-:4-1', 'manswer;-');"></td>
+    <td id='manswer;-:5-1' class='net' onClick="toggle('manswer;-:5-1', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*manswer;-' value='2-1.3-1.4-1.' size='80'>
+</td></tr><tr><td><input class='box' type='radio' name='jwhilemc;' value='all'></td><td><table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-1' class='beeper' onClick="toggle('manswer;-:1-1', 'manswer;-');"></td>
+    <td id='manswer;-:2-1' class='beeper' onClick="toggle('manswer;-:2-1', 'manswer;-');"></td>
+    <td id='manswer;-:3-1' class='beeper' onClick="toggle('manswer;-:3-1', 'manswer;-');"></td>
+    <td id='manswer;-:4-1' class='beeper' onClick="toggle('manswer;-:4-1', 'manswer;-');"></td>
+    <td id='manswer;-:5-1' class='net' onClick="toggle('manswer;-:5-1', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*manswer;-' value='1-1.2-1.3-1.4-1.' size='80'>
+</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>47</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isNet(AHEAD))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>and that she starts in this world:</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='mcstart;-:1-1' class='karel-E' onClick="toggle('mcstart;-:1-1', 'mcstart;-');"></td>
+    <td id='mcstart;-:2-1' class='none' onClick="toggle('mcstart;-:2-1', 'mcstart;-');"></td>
+    <td id='mcstart;-:3-1' class='none' onClick="toggle('mcstart;-:3-1', 'mcstart;-');"></td>
+    <td id='mcstart;-:4-1' class='none' onClick="toggle('mcstart;-:4-1', 'mcstart;-');"></td>
+    <td id='mcstart;-:5-1' class='net' onClick="toggle('mcstart;-:5-1', 'mcstart;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*mcstart;-' value='' size='80'>
+
+<p>Which of the pictures below shows where flowers would be after this program runs?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='jwhilemc2;' value='all'></td><td><table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-1' class='beeper' onClick="toggle('manswer;-:1-1', 'manswer;-');"></td>
+    <td id='manswer;-:2-1' class='beeper' onClick="toggle('manswer;-:2-1', 'manswer;-');"></td>
+    <td id='manswer;-:3-1' class='beeper' onClick="toggle('manswer;-:3-1', 'manswer;-');"></td>
+    <td id='manswer;-:4-1' class='beeper' onClick="toggle('manswer;-:4-1', 'manswer;-');"></td>
+    <td id='manswer;-:5-1' class='net' onClick="toggle('manswer;-:5-1', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*manswer;-' value='1-1.2-1.3-1.4-1.' size='80'>
+</td></tr><tr><td><input class='box' type='radio' name='jwhilemc2;' value='notlast'></td><td><table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-1' class='beeper' onClick="toggle('manswer;-:1-1', 'manswer;-');"></td>
+    <td id='manswer;-:2-1' class='beeper' onClick="toggle('manswer;-:2-1', 'manswer;-');"></td>
+    <td id='manswer;-:3-1' class='beeper' onClick="toggle('manswer;-:3-1', 'manswer;-');"></td>
+    <td id='manswer;-:4-1' class='none' onClick="toggle('manswer;-:4-1', 'manswer;-');"></td>
+    <td id='manswer;-:5-1' class='net' onClick="toggle('manswer;-:5-1', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*manswer;-' value='1-1.2-1.3-1.' size='80'>
+</td></tr><tr><td><input class='box' type='radio' name='jwhilemc2;' value='notfirst'></td><td><table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-1' class='none' onClick="toggle('manswer;-:1-1', 'manswer;-');"></td>
+    <td id='manswer;-:2-1' class='beeper' onClick="toggle('manswer;-:2-1', 'manswer;-');"></td>
+    <td id='manswer;-:3-1' class='beeper' onClick="toggle('manswer;-:3-1', 'manswer;-');"></td>
+    <td id='manswer;-:4-1' class='beeper' onClick="toggle('manswer;-:4-1', 'manswer;-');"></td>
+    <td id='manswer;-:5-1' class='net' onClick="toggle('manswer;-:5-1', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*manswer;-' value='2-1.3-1.4-1.' size='80'>
+</td></tr><tr><td><input class='box' type='radio' name='jwhilemc2;' value='none'></td><td><table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='manswer;-:1-1' class='none' onClick="toggle('manswer;-:1-1', 'manswer;-');"></td>
+    <td id='manswer;-:2-1' class='none' onClick="toggle('manswer;-:2-1', 'manswer;-');"></td>
+    <td id='manswer;-:3-1' class='none' onClick="toggle('manswer;-:3-1', 'manswer;-');"></td>
+    <td id='manswer;-:4-1' class='none' onClick="toggle('manswer;-:4-1', 'manswer;-');"></td>
+    <td id='manswer;-:5-1' class='net' onClick="toggle('manswer;-:5-1', 'manswer;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*manswer;-' value='' size='80'>
+</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>48</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose Karel starts in this world:</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-3' class='none' onClick="toggle('start;-:1-3', 'start;-');"></td>
+    <td id='start;-:2-3' class='none' onClick="toggle('start;-:2-3', 'start;-');"></td>
+    <td id='start;-:3-3' class='none' onClick="toggle('start;-:3-3', 'start;-');"></td>
+    <td id='start;-:4-3' class='none' onClick="toggle('start;-:4-3', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-2' class='none' onClick="toggle('start;-:1-2', 'start;-');"></td>
+    <td id='start;-:2-2' class='none' onClick="toggle('start;-:2-2', 'start;-');"></td>
+    <td id='start;-:3-2' class='none' onClick="toggle('start;-:3-2', 'start;-');"></td>
+    <td id='start;-:4-2' class='none' onClick="toggle('start;-:4-2', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='start;-:1-1' class='karel-E' onClick="toggle('start;-:1-1', 'start;-');"></td>
+    <td id='start;-:2-1' class='none' onClick="toggle('start;-:2-1', 'start;-');"></td>
+    <td id='start;-:3-1' class='none' onClick="toggle('start;-:3-1', 'start;-');"></td>
+    <td id='start;-:4-1' class='none' onClick="toggle('start;-:4-1', 'start;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*start;-' value='' size='80'>
+
+<br/>
+<p>Write a sequence of instructions that makes the world end up like this:</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-3' class='none' onClick="toggle('end;-:1-3', 'end;-');"></td>
+    <td id='end;-:2-3' class='none' onClick="toggle('end;-:2-3', 'end;-');"></td>
+    <td id='end;-:3-3' class='karel-N' onClick="toggle('end;-:3-3', 'end;-');"></td>
+    <td id='end;-:4-3' class='none' onClick="toggle('end;-:4-3', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-2' class='none' onClick="toggle('end;-:1-2', 'end;-');"></td>
+    <td id='end;-:2-2' class='none' onClick="toggle('end;-:2-2', 'end;-');"></td>
+    <td id='end;-:3-2' class='beeper' onClick="toggle('end;-:3-2', 'end;-');"></td>
+    <td id='end;-:4-2' class='none' onClick="toggle('end;-:4-2', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='end;-:1-1' class='none' onClick="toggle('end;-:1-1', 'end;-');"></td>
+    <td id='end;-:2-1' class='beeper' onClick="toggle('end;-:2-1', 'end;-');"></td>
+    <td id='end;-:3-1' class='beeper' onClick="toggle('end;-:3-1', 'end;-');"></td>
+    <td id='end;-:4-1' class='none' onClick="toggle('end;-:4-1', 'end;-');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*end;-' value='2-1.3-1.3-2.' size='80'>
+</span>
+	    <br/>
+<center><textarea name='*kseqcr;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>49</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+move();
+move();
+putBeeper();
+turnLeft();
+move();
+putBeeper();
+move();
+putBeeper();
+</div>
+<p>On the world, place beepers where they would end up when this program runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;kseqgrid:1-3' class='none' onClick="toggle('5;kseqgrid:1-3', '5;kseqgrid');"></td>
+    <td id='5;kseqgrid:2-3' class='none' onClick="toggle('5;kseqgrid:2-3', '5;kseqgrid');"></td>
+    <td id='5;kseqgrid:3-3' class='none' onClick="toggle('5;kseqgrid:3-3', '5;kseqgrid');"></td>
+    <td id='5;kseqgrid:4-3' class='none' onClick="toggle('5;kseqgrid:4-3', '5;kseqgrid');"></td>
+    <td id='5;kseqgrid:5-3' class='none' onClick="toggle('5;kseqgrid:5-3', '5;kseqgrid');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;kseqgrid:1-2' class='none' onClick="toggle('5;kseqgrid:1-2', '5;kseqgrid');"></td>
+    <td id='5;kseqgrid:2-2' class='none' onClick="toggle('5;kseqgrid:2-2', '5;kseqgrid');"></td>
+    <td id='5;kseqgrid:3-2' class='none' onClick="toggle('5;kseqgrid:3-2', '5;kseqgrid');"></td>
+    <td id='5;kseqgrid:4-2' class='none' onClick="toggle('5;kseqgrid:4-2', '5;kseqgrid');"></td>
+    <td id='5;kseqgrid:5-2' class='none' onClick="toggle('5;kseqgrid:5-2', '5;kseqgrid');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;kseqgrid:1-1' class='none' onClick="toggle('5;kseqgrid:1-1', '5;kseqgrid');"></td>
+    <td id='5;kseqgrid:2-1' class='none' onClick="toggle('5;kseqgrid:2-1', '5;kseqgrid');"></td>
+    <td id='5;kseqgrid:3-1' class='none' onClick="toggle('5;kseqgrid:3-1', '5;kseqgrid');"></td>
+    <td id='5;kseqgrid:4-1' class='none' onClick="toggle('5;kseqgrid:4-1', '5;kseqgrid');"></td>
+    <td id='5;kseqgrid:5-1' class='none' onClick="toggle('5;kseqgrid:5-1', '5;kseqgrid');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;kseqgrid' value='' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>50</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+move();
+turnLeft();
+move();
+turnLeft();
+putBeeper();
+move();
+putBeeper();
+</div>
+<p>On the world, place beepers where they would end up when this program runs.</p>
+<table class='karel'>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;kseqgrid2:1-3' class='none' onClick="toggle('5;kseqgrid2:1-3', '5;kseqgrid2');"></td>
+    <td id='5;kseqgrid2:2-3' class='none' onClick="toggle('5;kseqgrid2:2-3', '5;kseqgrid2');"></td>
+    <td id='5;kseqgrid2:3-3' class='none' onClick="toggle('5;kseqgrid2:3-3', '5;kseqgrid2');"></td>
+    <td id='5;kseqgrid2:4-3' class='none' onClick="toggle('5;kseqgrid2:4-3', '5;kseqgrid2');"></td>
+    <td id='5;kseqgrid2:5-3' class='none' onClick="toggle('5;kseqgrid2:5-3', '5;kseqgrid2');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;kseqgrid2:1-2' class='none' onClick="toggle('5;kseqgrid2:1-2', '5;kseqgrid2');"></td>
+    <td id='5;kseqgrid2:2-2' class='none' onClick="toggle('5;kseqgrid2:2-2', '5;kseqgrid2');"></td>
+    <td id='5;kseqgrid2:3-2' class='none' onClick="toggle('5;kseqgrid2:3-2', '5;kseqgrid2');"></td>
+    <td id='5;kseqgrid2:4-2' class='none' onClick="toggle('5;kseqgrid2:4-2', '5;kseqgrid2');"></td>
+    <td id='5;kseqgrid2:5-2' class='none' onClick="toggle('5;kseqgrid2:5-2', '5;kseqgrid2');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td id='5;kseqgrid2:1-1' class='none' onClick="toggle('5;kseqgrid2:1-1', '5;kseqgrid2');"></td>
+    <td id='5;kseqgrid2:2-1' class='none' onClick="toggle('5;kseqgrid2:2-1', '5;kseqgrid2');"></td>
+    <td id='5;kseqgrid2:3-1' class='none' onClick="toggle('5;kseqgrid2:3-1', '5;kseqgrid2');"></td>
+    <td id='5;kseqgrid2:4-1' class='none' onClick="toggle('5;kseqgrid2:4-1', '5;kseqgrid2');"></td>
+    <td id='5;kseqgrid2:5-1' class='none' onClick="toggle('5;kseqgrid2:5-1', '5;kseqgrid2');"></td>
+    <td class='water'></td>
+</tr>
+<tr>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+    <td class='water'></td>
+</tr>
+</table>
+<input type='hidden' name='*5;kseqgrid2' value='' size='80'>
+</span>
+	    <br/>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>51</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose Karel is facing a wall.  What kappens if karel is given a
+<span class="code">move()</span> command?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='kwallmove;' value='error'></td><td>Karel tries to move forward, but reports an error instead.</td></tr><tr><td><input class='box' type='radio' name='kwallmove;' value='nothing'></td><td>Nothing at all happens.  Karel does not follow the command.</td></tr><tr><td><input class='box' type='radio' name='kwallmove;' value='back'></td><td>karel moves backward, away from the wall.</td></tr><tr><td><input class='box' type='radio' name='kwallmove;' value='moves'></td><td>Karel moves forward, to the other side of the wall.</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>52</td>
+	    <td colspan='2'><span class="prompt"><p>Suppose there is a wall to the left of Karel.  What happens if Karel is given a
+<span class="code">turnLeft()</span> command?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='kwallturn;' value='error'></td><td>Karel tries to turn left, but reports an error instead.</td></tr><tr><td><input class='box' type='radio' name='kwallturn;' value='right'></td><td>Karel turns right, away from the wall.</td></tr><tr><td><input class='box' type='radio' name='kwallturn;' value='nothing'></td><td>Nothing at all happens.  Karel does not follow the command.</td></tr><tr><td><input class='box' type='radio' name='kwallturn;' value='left'></td><td>Karel turns left, towards the wall.</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>53</td>
+	    <td colspan='2'><span class="prompt"><p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+}
+</div>
+<p>What will the <b>left wheel</b> do when this program runs?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='rcxbasic1;' value='fwdshort'></td><td>Move forward for a short time, then stop.</td></tr><tr><td><input class='box' type='radio' name='rcxbasic1;' value='fwdtouch'></td><td>Move forward until the robot touches something, then stop.</td></tr><tr><td><input class='box' type='radio' name='rcxbasic1;' value='nothing'></td><td>The left wheel will not do anything.</td></tr><tr><td><input class='box' type='radio' name='rcxbasic1;' value='fwdindef'></td><td>Keep moving forward, even if it the robot touches something.</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>54</td>
+	    <td colspan='2'><span class="prompt"><p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+}
+</div>
+<p>What will the <b>right wheel</b> do when this program runs?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='rcxbasic2;' value='fwdshort'></td><td>Move forward for a short time, then stop.</td></tr><tr><td><input class='box' type='radio' name='rcxbasic2;' value='fwdindef'></td><td>Keep moving forward, even if it the robot touches something.</td></tr><tr><td><input class='box' type='radio' name='rcxbasic2;' value='fwdtouch'></td><td>Move forward until the robot touches something, then stop.</td></tr><tr><td><input class='box' type='radio' name='rcxbasic2;' value='nothing'></td><td>The right wheel will not do anything.</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>55</td>
+	    <td colspan='2'><span class="prompt"><p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+	fd(C);
+}
+</div>
+<p>What will the <b>whole robot</b> do when this program runs?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='rcxbasic3;' value='nothing'></td><td>The robot will not do anything.</td></tr><tr><td><input class='box' type='radio' name='rcxbasic3;' value='fwdtouch'></td><td>Move forward until the robot touches something, then stop.</td></tr><tr><td><input class='box' type='radio' name='rcxbasic3;' value='fwdindef'></td><td>Keep moving forward, even if it the robot touches something.</td></tr><tr><td><input class='box' type='radio' name='rcxbasic3;' value='fwdshort'></td><td>Move forward for a short time, then stop.</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>56</td>
+	    <td colspan='2'><span class="prompt"><p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+	fd(C);
+	alloff();
+}
+</div>
+<p>What will the <b>whole robot</b> do when this program runs?</p></span>
+	    <br/>
+<table class='choices'>
+<tr><td><input class='box' type='radio' name='rcxbasic4;' value='fwdindef'></td><td>Keep moving forward, even if it the robot touches something.</td></tr><tr><td><input class='box' type='radio' name='rcxbasic4;' value='fwdshort'></td><td>Move forward for a short time, then stop.</td></tr><tr><td><input class='box' type='radio' name='rcxbasic4;' value='nothing'></td><td>The robot will not do anything,</td></tr><tr><td><input class='box' type='radio' name='rcxbasic4;' value='fwdtouch'></td><td>Move forward until the robot touches something, then stop.</td></tr></table>
+</td></tr>
+<table class="questions">
+	<tr><td class='number'>57</td>
+	    <td colspan='2'><span class="prompt"><p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+	fd(C);
+	bk(C);
+	fd(B);
+}
+</div>
+<p>Describe the motion of the whole robot when this program is run.</p></span>
+	    <br/>
+<center><textarea name='*rcxfdbkseq;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>58</td>
+	    <td colspan='2'><span class="prompt">Write a complete Interactive C program to make the robot rotate to the left:</span>
+	    <br/>
+<center><textarea name='*rcxleftcr;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>
+<table class="questions">
+	<tr><td class='number'>59</td>
+	    <td colspan='2'><span class="prompt">Write a complete Interactive C program to make the robot <b>rotate to the right for 5 seconds, then stop</b>:</span>
+	    <br/>
+<center><textarea name='*rcxrightcr;' class='textfield' cols='50' rows='8'></textarea></center></td></tr>

@@ -1,0 +1,43 @@
+bornus	Were you born in the United States?
+	Y	Yes
+	N	No
+;;
+whenimm	If you were not born in the U.S., how old were you when you moved to the U.S.?	short
+;;
+ethnicity	How do you describe your own ethnicity?  Select as many as apply.	multi
+	L	Latino or Hispanic
+	B	Black or African-American
+	A	Asian or Asian-American
+	N	Native American 
+	P	Pacific Islander
+	W	White or Caucasian
+	other	Other
+;;
+recmath	What is the most recent <b>math class</b> you have taken, or are taking now?	long
+;;
+recsci	What is the most recent <b>science class</b> you have taken, or are taking now?	long
+;;
+classes	What classes are you taking now, <b>EXCEPT any science and math classes</n>?	long
+;;
+bestat	Which academic subjects do you think are you best at?	long
+;;
+worstat	Which academic subjects do you think are you worst at?	long
+;;
+enjoymost	Which academic subjects do you <b>enjoy</b> the most?	long
+;;
+enjoyleast	Which academic subjects do you </b>enjoy</b> the least?	long
+;;
+owntime	What are some things you especially enjoy doing <b>on your own time</b>?	long
+;;
+%%;;
+none
+	bornus
+	whenimm
+	ethnicity
+	recmath
+	recsci
+	classes
+	bestat
+	worstat
+	enjoymost
+	enjoyleast

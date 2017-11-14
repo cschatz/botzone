@@ -1,0 +1,10 @@
+ethnicity	How would you describe your ethnicity	multi
+	W	White
+	B	African-American
+	A	Asian-American
+	L	Hispanic or Latino/a
+	O	Other
+;
+%%;
+none
+	ethnicity

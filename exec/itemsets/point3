@@ -1,0 +1,306 @@
++jfunc1
+<p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	hop();
+	plant();
+	hop();
+	plant();
+	hop();
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(RIGHT);
+alice.sequence();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<?GRID jfunc1 5 5 1-4 E ?>
+--
+##
+;;
++jwhilegr3a
+<p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isWater(LEFT))
+{
+	mary.hop();  
+}
+mary.turn(LEFT);
+while (mary.isWater(RIGHT))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jwhilegr3a 5 5 1-3 E ?>
+--
+##
+;;
++jwhilemc2
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isNet(AHEAD))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>and that she starts in this world:</p>
+<?GRID - mcstart 5 1 1-1 E *5-1 ?>
+<p>Which of the pictures below shows where flowers would be after this program runs?</p>
+--
+all:
+<?GRID - manswer 5 1 0-0 E 1-1 2-1 3-1 4-1 *5-1 ?>
+.
+none:
+<?GRID - manswer 5 1 0-0 E *5-1 ?>
+.
+notfirst:
+<?GRID - manswer 5 1 0-0 E 2-1 3-1 4-1 *5-1 ?>
+.
+notlast:
+<?GRID - manswer 5 1 0-0 E 1-1 2-1 3-1 *5-1 ?>
+.
+;;
+;;
++jseqcr2
+<p>Suppose a Jeroo starts in this world:</p>
+<?GRID - start 4 3 1-3 N ?>
+<br/>
+<p>Write a sequence of instructions, <b>using a while statement</b>,
+ that makes the world end up like this:</p>
+<?GRID - end 4 3 0-0 N 2-3 3-3 4-3 ?>
+--
+
+;;
++jdebugs3
+<p>The Jeroo program below has some errors in it.  Change it to fix the errors:</p>
+<?TEXT
+method main()
+{
+   Jeroo mary = new Jeroo (3, 1, west);
+   while (!mary.isNet(AHEAD));
+   {
+      hop();
+   }
+   mary.turn(LEFT);
+}
+?>
+--
+##
+;;
++jfunc2
+<p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	while (!isWater(AHEAD))
+	{
+		hop();
+	}	
+
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(LEFT);
+alice.sequence();
+alice.plant();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<?GRID jfunc2 5 5 2-1 N ?>
+--
+##
+;;
++cfunc1
+<p>Suppose your robot has this entire Interactive C program:</p>
+<div class="code">
+void multi()
+{
+	beep();
+	beep();
+}
+
+void main()
+{
+	multi();
+	multi();
+	multi();
+}
+</div>
+<p>What will the robot do when the program runs?  <b>Be specific.</b></p>
+--
+
+;;
++cfunc2
+<p>Suppose your robot has this entire Interactive C program:</p>
+<div class="code">
+void mycmd()
+{
+	while (digital(1) == 0)
+	{
+		fd(A);
+		fd(C);
+	}
+}
+
+void main()
+{
+	beep();
+	mycmd();
+	beep();
+}
+</div>
+<p>What will this do when it runs?  Be as specific as possible.</p>
+<?TEXT
+First, it will ____________________________________
+
+Then it will  ____________________________________
+
+Finally it will _____________________________________
+
+?>
+--
+##
+;;
++cfunc3
+<p>Now, suppose your robot has this program:</p>
+<div class="code">
+oid go()
+{
+	while (digital(2) == 1)
+	{
+		beep();
+	}
+}
+
+void main()
+{
+	beep();
+	go();
+}
+</div>
+<p>Suppose the robot is <b>already touching a wall</b> when this runs.  How many times will it beep?
+--
+manyuntil:
+It will beep many times, stopping when the robot is moved away from the wall.
+.
+once:
+It will beep exactly once, no matter what happens.
+.
+manyindef:
+It will beep many times, and continue to beep no matter what happens.
+.
+nothing:
+It will not beep at all, no matter what happens.
+.
+;;
++cwhilecr2
+<p>Suppose your robot has a touch sensor connected as sensor #1, and a program with this sequence of instructions:</p>
+<div class="code">
+while (digital(1) == 0)
+{
+	fd(A);
+	fd(C);
+}
+alloff();
+beep();
+</div>
+<p>Describe in detail what the robot does when the program runs.</p>
+--
+
+;;
++cwhilepr2
+<p>Write a complete Interactive C program (using new commands if you want)for a robot to:</p>
+<ul>
+<li>Move forward until the front sensor hits something...</li>
+<li>Then, turn left for two seconds...</li>
+<li>Then, stop.</li>
+</ul>
+--
+
+;;
++cdebugs3
+<p>The Interactive C program below has some errors in it.  Change it to fix the errors:</p>
+<?TEXT
+void cmd()
+{
+	fd(a);
+}
+
+void main()
+{
+   while (digital(1) == 0)
+   {
+	cmd;
+   }
+   alloff() 
+}
+?>
+--
+##
+;;
++cinterpwh2
+<p>Suppose your robot has this program:</p>
+<div class="code">
+void main()
+{
+   while (digital(1) == 1);
+   {
+	beep();
+   }
+   fd(A);
+   fd(C);
+}
+</div>
+<p>Describe the way the robot will behave in these two situations - be specific:</p>
+<?TEXT
+(A) If it is already touching a wall when it starts.
+
+
+
+(B) If it is not touching a wall when it starts.
+
+
+?>
+--
+##
+;;
+%%;;
+A:k8	Jeroo Activity 8
+	jfunc1
+	jwhilegr3a
+	jwhilemc2
+	jseqcr2
+	jdebugs2
+	jfunc2
+	jseqgrid
+	jseqgrid2
+	attitude
+	effic
+	future
+	lmood
+	effort
+B:c6	Lego Activity 6
+	cfunc1
+	cfunc2
+	cfunc3
+	cwhilecr2
+	cwhilepr2
+	cwhilemc2
+	cdebugs3
+	cinterpwh2
+	effic
+	lmood
+	effort
+	attitude
+	future
+
+

@@ -1,0 +1,277 @@
++jwhilegr
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+mary.hop();
+mary.plant();
+while (!mary.isWater(AHEAD))
+{
+  mary.hop();
+}
+mary.plant();
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jwhilegr 5 5 2-4 S ?>
+--
+##
+;;
++jwhilegr2
+<p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+mary.hop();
+while (mary.isFlower(LEFT))
+{
+	mary.plant();
+	mary.hop();  
+}
+mary.plant();
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jwhilegr2 5 5 2-5 S 3-2 3-3 3-4 ?>
+--
+##
+;;
++jwhilegr3
+<p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+while (mary.isWater(LEFT))
+{
+	mary.hop();  
+}
+mary.turn(RIGHT);
+while (mary.isWater(LEFT))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jwhilegr3 5 5 1-1 N  ?>
+--
+##
+;;
++jwhilemc
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isNet(AHEAD))
+{
+	mary.plant();
+	mary.hop();  
+}
+</div>
+<p>and that she starts in this world:</p>
+<?GRID - mcstart 5 1 1-1 E *5-1 ?>
+<p>Which of the pictures below shows where flowers would be after this program runs?</p>
+--
+all:
+<?GRID - manswer 5 1 0-0 E 1-1 2-1 3-1 4-1 *5-1 ?>
+.
+none:
+<?GRID - manswer 5 1 0-0 E *5-1 ?>
+.
+notfirst:
+<?GRID - manswer 5 1 0-0 E 2-1 3-1 4-1 *5-1 ?>
+.
+notlast:
+<?GRID - manswer 5 1 0-0 E 1-1 2-1 3-1 *5-1 ?>
+.
+;;
+;;
++jseqcr
+<p>Suppose a Jeroo starts in this world:</p>
+<?GRID - start 4 3 1-2 N ?>
+<br/>
+<p>Write a sequence of instructions that makes the world end up like this:</p>
+<?GRID - end 4 3 0-0 N 2-2 3-2 4-2 3-2 ?>
+--
+
+;;
++jdebugs2
+<p>The Jeroo program below has some errors in it.  Change it to fix the errors:</p>
+<?TEXT
+method main()
+{
+   Jeroo mary = new Jeroo (1, 1, SOUTH);
+   while (!mary.isWater(AHEAD));
+   {
+      mary.hop();
+      mary.turn LEFT
+   }
+}
+?>
+--
+##
+;;
++cwhilecr
+<p>Suppose your robot has a touch sensor connected as sensor #1, and a program with this sequence of instructions:</p>
+<div class="code">
+beep();
+
+while (digital(1) == 0)
+{
+	beep();
+	fd(A);
+	fd(C);
+}
+
+alloff();
+</div>
+<p>Describe in detail what the robot does when the program runs.</p>
+--
+
+;;
++cwhilemc
+<p>Now, suppose it has this entire program:</p>
+<div class="code">
+void main()
+{
+  while (digital(1) == 0)
+  {
+	beep();
+  }
+}
+</div>
+<p>What does the robot do when this program runs?</p>
+--
+yesonce:
+It beeps once.
+.
+yesuntil:
+It beeps repeatedly until the touch sensor is pressed, then stops.
+.
+nountil:
+It waits until the touch sensor is pressed, then beeps repeatedly.
+.
+nothing:
+It does not do anything, no matter what happens.
+.
+;;
++cwhilepr
+<p>Write a complete Interactive C program for a robot to:</p>
+<ul>
+<li>Spin around (either right or left) until the front sensor hits something...</li>
+<li>Then, move backwards for 2 seconds</li>
+<li>Then, beep.</li>
+</ul>
+--
+
+;;
++cwhilemc2
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+   while (digital(1) == 0)
+   {
+      fd(A);
+      fd(C);
+   }
+   alloff();
+}
+</div>
+<p>What does the robot do when this program runs?</p>
+--
+fwdshort:
+Move forward for a short time, then stop.
+.
+fwdtouch:
+Move forward until the robot touches something, then stop.
+.
+fwdindef:
+Keep moving forward, even if it the robot touches something.
+.
+nothing:
+The robot does not do anything.
+.
+;;
++cwhilemc3
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+   while (digital(1) == 0)
+   {
+      fd(A);
+      fd(C);
+   }
+}
+</div>
+<p>What does the robot do when this program runs?</p>
+--
+fwdshort:
+Move forward for a short time, then stop.
+.
+fwdtouch:
+Move forward until the robot touches something, then stop.
+.
+fwdindef:
+Keep moving forward, even if it the robot touches something.
+.
+nothing:
+The robot does not do anything.
+.
+;;
++cdebugs2
+<p>The Interactive C program below has some errors in it.  Change it to fix the errors:</p>
+<?TEXT
+void main()
+{
+   while (digital(1) == 0);
+   {
+      fd(A);
+      fd C 
+   }
+   sleep();
+   alloff() 
+}
+?>
+--
+##
+;;
++cinterpwh
+<p>Suppose you had a robot running this program - note that it is similar to many of
+the others, but with a <b>0</b> where we usually have <b>1</b>.</p>
+<div class="code">
+void main()
+{
+   while (digital(1) == 1)
+   {
+	beep();
+   }
+}
+</div>
+<p>What do you think this will do when it is run?  Does it depend what situation the robot is in?
+Be as specific as you can.</p>
+--
+
+;;
+%%;;
+A:k7	Jeroo Activity 7
+	jwhilegr
+	jwhilegr2
+	jwhilemc
+	jwhilegr3
+	jseqcr
+	jdebugs2
+	jnetmove
+	effic
+	lmood
+	effort
+	attitude
+	compintel
+	future
+	selfintel
+B:c6	Lego Activity 6
+	cwhilecr
+	cwhilemc
+	cwhilepr
+	cwhilemc2
+	cwhilemc3
+	cdebugs2
+	cinterpwh
+	effic
+	lmood
+	effort
+	attitude
+	compintel
+	future
+	selfintel
+
+

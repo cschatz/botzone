@@ -1,0 +1,57 @@
++cinterpwh2
+<p>Suppose your robot has this program:</p>
+<div class="code">
+void main()
+{
+   while (digital(1) == 1);
+   {
+	beep();
+   }
+   fd(A);
+   fd(C);
+}
+</div>
+<p>Describe the way the robot will behave in these two situations - be specific:</p>
+<?TEXT
+(A) If it is already touching a wall when it starts.
+
+
+
+(B) If it is not touching a wall when it starts.
+
+
+?>
+--
+##
+;;
+%%;;
+A:k8	Jeroo Activity 8
+	jfunc1
+	jwhilegr3a
+	jwhilemc2
+	jseqcr2
+	jdebugs2
+	jfunc2
+	jseqgrid
+	jseqgrid2
+	attitude
+	effic
+	future
+	lmood
+	effort
+B:c6	Lego Activity 6
+	cfunc1
+	cfunc2
+	cfunc3
+	cwhilecr2
+	cwhilepr2
+	cwhilemc2
+	cdebugs3
+	cinterpwh2
+	effic
+	lmood
+	effort
+	attitude
+	future
+
+

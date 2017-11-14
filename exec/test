@@ -1,0 +1,18 @@
++kbasic
+<p>Consider this piece of Karel code:</p>
+<div class="code">while (true)
+{
+	move();
+	turnLeft();
+}
+</div>
+<p>Please describe in your own words what Karel will do when this is run.</p>
+--
+
+;;
+likesch	How much do you like or dislike school? Please explain.	long
+;;
+%%;;
+none
+	kbasic
+	likesch

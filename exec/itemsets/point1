@@ -1,0 +1,49 @@
+future	Think about what you see yourself doing in the future.  How likely do you think it is that you will do any of these things? (Pick one answer for each.)
+	1	very unlikely
+	2	unlikely
+	3	somewhat unlikely
+	4	somewhat likely
+	5	likely
+	6	very likely
+::
+compclass	Taking computer-related classes?
+majCS	Majoring in computer science in college?
+startbus	Starting your own business?
+program	Being a computer programmer?
+engineer	Becoming an engineer of some sort?
+webdes	Becoming a Web designer?
+compspec	Becoming a computer or network specialist?
+compteach	Becoming a computer or technology teacher?
+compwork	Using computers in your work?
+;;
++kseqcr
+<p>Suppose Karel starts in this world:</p>
+<?GRID - start 4 3 1-1 E ?>
+<br/>
+<p>Write a sequence of instructions that makes the world end up like this:</p>
+<?GRID - end 4 3 3-3 N 2-1 3-1 3-2 ?>
+--
+
+;;
++kseqgrid
+<p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+move();
+move();
+putBeeper();
+turnLeft();
+move();
+putBeeper();
+move();
+putBeeper();
+</div>
+<p>On the world, place beepers where they would end up when this program runs.</p>
+<?GRID kseqgrid 5 5 3-3 N ?>
+--
+##
+;;
+%%;;
+none
+	future
+	kseqcr
+	kseqgrid

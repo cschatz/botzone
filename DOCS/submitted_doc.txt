@@ -1,0 +1,4 @@
+(Sample document)
+The DOCS folder is used by the upload portion of the app to store 
+student/user submissions.
+

@@ -1,0 +1,43 @@
++kbasic2
+<p>Consider this piece of Karel code:</p>
+<div class="code">
+while (true)
+{
+	move();
+	turnLeft();
+}
+</div>
+Which option below best describes what Karel will do when this is run?
+--
+spincw:
+Karel will spin clockwise in place. <img src="/images/copyright.gif">
+.
+spinccw:
+Karel will spin counter-clockwise in place.
+.
+squarecw:
+Karel will walk in a square clockwise.
+.
+squareccw:
+Karel will walk in a square counter-clockwise.
+.
+;;
++kbasic0
+Suppose Karel starts in the world shown below, and has this program:
+<div class="code">while (garbage)
+{
+	move();
+}
+</div>
+<?php
+    system ("exec/grid.pl kbasics 8 5 1-1 N 2-1 2-2 2-4");
+?>
+Place beepers in the grid where they would be at the end of the program.
+--
+##
+;;
+%%;;
+none
+	kbasic2
+	kbasic0
+

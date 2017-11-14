@@ -1,0 +1,158 @@
+effic	Indicate <b>how confident</b> you are that you can do each of the things below, as of today.
+	1	Not confident at all
+	2	Mostly not confident
+	3	Slightly confident
+	4	Fairly confident
+	5	Mostly confident
+	6	Absolutely confident
+::
+writesimp	Write a simple program on my own.
+fixerror	Figure out errors in my program when they occur.
+finishcall	Complete a programming activity if I could call someone for help when I get stuck.
+finishstar	Complete a programming activity once someone else helped me get started.
+finishself	Complete a programming activity on my own.
+;;
++jseqgrid
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+bob.hop();
+bob.plant();
+bob.turn(LEFT);
+bob.hop(2);
+bob.turn(RIGHT);
+bob.hop();
+bob.plant();
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jseqgrid 5 5 3-3 N ?>
+--
+##
+;;
++jseqgrid2
+<p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+bob.hop();
+bob.turn(LEFT);
+bob.turn(LEFT);
+bob.hop(2);
+bob.plant();
+bob.hop();
+bob.plant();
+</div>
+<p>On the world, place beepers where they would end up when this program runs.</p>
+<?GRID jseqgrid2 5 5 3-3 W ?>
+--
+##
+;;
++jnetmove
+<p>Suppose a Jeroo is facing a net.  What kappens if the Jeroo is given a
+<span class="code">hop()</span> command?</p>
+--
+nothing:
+Nothing at all happens.  The Jeroo does not follow the command.
+.
+back:
+The Jeroo moves backward, away from the net.
+.
+error:
+The Jeroo tries to move forward, causing an error.
+.
+moves:
+The Jeroo moves forward, successfully.
+.
+;;
++jdebugs
+<p>The Jeroo program below has some errors in it.  Change it to fix the errors:</p>
+<?TEXT
+method main()
+{
+   Jeroo mary = new Jeroo (1, 1, SOUTH);
+   mary.hop();
+   mary hop();
+   mary.turn(LEFT)
+}
+?>
+--
+##
+;;
++rcxbasic3
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+	fd(C);
+}
+</div>
+<p>What will the <b>whole robot</b> do when this program runs?</p>
+--
+fwdshort:
+Move forward for a short time, then stop.
+.
+fwdtouch:
+Move forward until the robot touches something, then stop.
+.
+fwdindef:
+Keep moving forward, even if it the robot touches something.
+.
+nothing:
+The robot will not do anything.
+.
+;;
++rcxbasic4
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+	fd(C);
+	alloff();
+}
+</div>
+<p>What will the <b>whole robot</b> do when this program runs?</p>
+--
+fwdshort:
+Move forward for a short time, then stop.
+.
+fwdtouch:
+Move forward until the robot touches something, then stop.
+.
+fwdindef:
+Keep moving forward, even if it the robot touches something.
+.
+nothing:
+The robot will not do anything,
+.
+;;
++rcxrightcr
+Write a complete Interactive C program to make the robot <b>rotate to the right for 5 seconds, then stop</b>:
+--
+
+;;
++cdebugs
+<p>The Interactive C program below has some errors in it.  Change it to fix the errors:</p>
+<?TEXT
+method main
+{
+   fd(A);
+   fd(C);
+   sleep(5.0)
+   allofff();
+}
+?>
+--
+##
+;;
+%%;;
+A:k6	Jeroo Activity 6
+	jseqgrid
+	jseqgrid2
+	jnetmove
+	jdebugs
+B:c5	Lego Activity 5
+	rcxbasic3
+	rcxbasic4
+	rcxrightcr
+	cdebugs
+none
+	effic
+	lmood
+	effort

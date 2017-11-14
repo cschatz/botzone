@@ -1,0 +1,64 @@
+selfintel	Indicate how much you agree or disagree with each statement below.
+	1	Strongly Disagree
+	2	Disgree
+	3	Somewhat Disagree
+	4	Somewhat Agree
+	5	Agree
+	6	Strongly Agree
+::
+ent1	You have a certain amount of intelligence, and you can&apos;t really do much to change it.
+ent2	Your intelligence is something about you that you can&apos;t change very much.
+ent3	You can learn new things, but you can&apos;t really change your basic intelligence.
+inc1	No matter who you are, you can change your intelligence a lot.
+inc2	You can always greatly change how intelligent you are.
+inc3	No matter how much intelligence you have, you can always change it quite a bit.
+;
+compintel	Indicate how much you agree or disagree with each statement below.
+	1	Strongly Disagree
+	2	Disgree
+	3	Somewhat Disagree
+	4	Somewhat Agree
+	5	Agree
+	6	Strongly Agree
+::
+ent1	You have a certain amount of computer ability, and you can&apos;t really do much to change it.
+ent2	Your computer ability is something about you that you can&apos;t change very much.
+ent3	You can learn new things, but you can&apos;t really change your basic computer ability.
+inc1	No matter who you are, you can change your computer ability a lot.
+inc2	You can always greatly change how good at computers you are.
+inc3	No matter how much computer ability you have, you can always change it quite a bit.
+;
+scratchlike	On a scale of 1-5, how much did you like working with Scratch?
+	1	1 - Not at all
+	2	2 - Not much
+	3	3 - Neutral
+	4	4 - Somewhat
+	5	5 - A lot
+;
+scratchfut	On a scale of 1-5, how much would you like to work more with Scratch?
+	1	1 - Not at all
+	2	2 - Not much
+	3	3 - Neutral
+	4	4 - Somewhat
+	5	5 - Very much
+;
+scratchund	On a scale of 1-5, how would you rate your own understanding of Scratch?
+	1	1 - Very little understanding
+	2	2 
+	3	3
+	4	4 
+	5	5 - Very good understanding
+;
+scratchother	Any other comments about Scratch?	long
+;
+gradplan	What do you think you'll be doing the year after you graduate from high school?  Answer briefly.	long
+;
+%%;
+none
+	scratchlike
+	selfintel
+	scratchfut
+	compintel
+	scratchund
+	gradplan
+

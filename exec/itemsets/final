@@ -1,0 +1,92 @@
+projsat	Overall, how satisfied were you with your final project?
+	1	1 - very dissatisfied
+	2	2 - moderately dissatisfied
+	3	3 - somewhat dissatisfied
+	4	4 - somewhat satisfied
+	5	5 - moderately satisfied
+	6	6 - very satisfied
+;;
+projeff	How much effort did you put into your final project?
+	1	1 - No effort
+	2	2
+	3	3
+	4	4
+	5	5
+	6	6 - Maximum effort
+;;
+jeroofut	How much would you like to have the chance to work with Jeroo in the future?
+	1	1 - not at all
+	2	2 - not really
+	3	3 - neutral
+	4	4 - somewhat
+	5	5 - bery much
+;;
+legofut	How much would you like to have the chance to work with Lego robots in the future?
+	1	1 - not at all
+	2	2 - not really
+	3	3 - neutral
+	4	4 - somewhat
+	5	5 - very much
+;;
+jeroodif	Overall, how difficult was it to learn Jeroo programming?
+	1	1 - very easy
+	2	2 - moderately easy
+	3	3 - somewhat easy
+	4	4 - somewhat difficult
+	5	5 - moderately difficult
+	6	6 - very difficult
+;;
+legodif	Overall, how difficult was it to learn Lego robot programming (Interactive C)?
+	1	1 - very easy
+	2	2 - moderately easy
+	3	3 - somewhat easy
+	4	4 - somewhat difficult
+	5	5 - moderately difficult
+	6	6 - very difficult
+;;
+misccomm	Is there anything else you would like to tell me about Jeroo, Lego robots or anything else about the past several weeks?  Please share any comments you have.	long
+;;
+%%;;
+none
+	projsat
+	projeff
+	selfintel
+	effic
+	compintel
+	rcxbasic1
+	rcxbasic2
+	jseqgrid
+	jseqcr
+	rcxrightcr
+	jseqcr3
+	future
+	cwhilecr2
+	cwhilecr
+	jwhilegr
+	jwhilegr4
+	cwhilemc
+	cwhilemc2
+	cwhilemc4
+	jwhilemc
+	jwhilemc2
+	cifmc
+	cifmc2
+	jifmc
+	jifseq
+	rcxbasic3
+	jnetmove
+	cdebugs
+	jdebugs2
+	cfunc1
+	cfunc3
+	cfunc4
+	cfunc6
+	jfunc1
+	jfunc4
+	jfunc5
+	jfunc6
+	jeroofut
+	legofut
+	jeroodif
+	legodif
+	misccomm

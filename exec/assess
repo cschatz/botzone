@@ -1,0 +1,16 @@
++kbasic0
+Suppose Karel starts in the world shown below, and has this program:
+<div class="code">while (garbage)
+{
+	move();
+}
+</div>
+<p>Place beepers in the grid where they would be at the end of the program.</p>
+<?GRID kbasic0 8 5 1-1 N 2-1 2-2 2-4 ?>
+--
+##
+;;
+%%;;
+none
+	kbasic0
+

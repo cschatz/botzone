@@ -1,0 +1,61 @@
+mood	How is your learning mood at the moment? Please elaborate.	long
+;
+karellike	On a scale of 1-5, how much did you like working with Karel?
+	1	1 - Not at all
+	2	2 - Not much
+	3	3 - Neutral
+	4	4 - Somewhat
+	5	5 - A lot
+;
+karelfut	On a scale of 1-5, how much would you like to work more with Karel?
+	1	1 - Not at all
+	2	2 - Not much
+	3	3 - Neutral
+	4	4 - Somewhat
+	5	5 - Very much
+;
+karelund	On a scale of 1-5, how would you rate your own understanding of Karel?
+	1	1 - Very little understanding
+	2	2 
+	3	3
+	4	4 
+	5	5 - Very good understanding
+;
+karelother	Any other comments about Karel?	long
+;
+iclike	On a scale of 1-5, how much did you like working with Interactive C?
+	1	1 - Not at all
+	2	2 - Not much
+	3	3 - Neutral
+	4	4 - Somewhat
+	5	5 - A lot
+;
+icfut	On a scale of 1-5, how much would you like to work more with Interactive C?
+	1	1 - Not at all
+	2	2 - Not much
+	3	3 - Neutral
+	4	4 - Somewhat
+	5	5 - Very much
+;
+icund	On a scale of 1-5, how would you rate your own understanding of Interactive C?
+	1	1 - Very little understanding
+	2	2 
+	3	3
+	4	4 
+	5	5 - Very good understanding
+;
+icother	Any other comments about Interactive C?	long
+;
+%%;
+p3	Generic Programming Activity 3
+	mood	
+A:k3	Karel Activity 3
+	karellike
+	karelfut
+	karelund
+	karelother
+B:l3	Lego Activity 3
+	iclike
+	icfut
+	icund
+	icother

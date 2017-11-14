@@ -1,0 +1,111 @@
+#!/usr/bin/perl
+
+use CGI;
+
+$query = new CGI();
+$input = $query->param('src');
+
+open (IN, "< $input") || die $!;
+$/ = \1;
+
+above();
+
+$thisline = "";
+$current = 0;
+$numblocks = 0;
+
+print qq:<p class="dummy"></p>\n:;
+
+while (<IN>)
+{
+    if ($_ ne "\n")
+    {
+	if ($_ eq ";")
+	{
+	    trim (\$thisline);
+	    plain("$thisline;");
+	    $thisline = "";
+	}
+	elsif ($_ eq "{")
+	{
+	    $numblocks++;
+	    trim (\$thisline);
+	    start_scope($thisline);
+	    $thisline = "";
+	}
+	elsif ($_ eq "}")
+	{
+	    trim (\$thisline);
+	    if ($thisline ne "") { plain ("$thisline"); }
+	    end_scope();
+	    $thisline = "";
+	}
+	else { $thisline .= $_; }
+    }
+}
+
+below();
+
+sub trim
+{
+    my ($tref) = @_;
+    $$tref =~ s/^ +//;
+    $$tref =~ s/ +$//;
+}
+
+sub emit
+{
+    my ($id, $indent, $text, $selectable) = @_;
+    $inside = $text;
+    if ($selectable) { $inside = "<span>$text</span>"; }
+    $inside = (" " x ($indent * 3)) . $inside;
+    print qq:<span id="${id}-enc"><p class="normal" id="$id" onclick="Clicked(this.id);">$inside</p></span>\n:;
+}
+
+sub plain
+{
+    my ($code) = @_;
+    emit ("unclickable", $current, "$code", 0);
+}
+
+sub start_scope
+{
+    my ($header) = @_;
+    emit ("S${current}-header", $current, $header, 1);
+    emit ("S${current}-begin", $current, "{", 1);
+    $current ++;
+}
+
+sub end_scope
+{
+    $current --;
+    emit ("S${current}-end", $current, "}", 1);
+}
+
+sub above
+{
+print "Content-type: text/plain\n\n";
+print <<"EOF";
+<div id="task">
+<div id="info">
+<p class="plain" id="status">Select your first line.</p>
+</div>
+<div class="code">
+EOF
+}
+
+sub below
+{
+    $numlines = $numblocks * 3;
+print <<"EOF";
+</div>
+<div class="internal">
+<span id="list_remain"></span>
+<span id="list_already"></span>
+</div>
+<div id="report">
+<span class="tab">Remaining: <span class="score" id="remaining">$numlines</span></span>
+<span class="tab">Mistakes: <span class="score" id="mistakes">0</span></span>
+</div>
+EOF
+}

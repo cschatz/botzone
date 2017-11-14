@@ -1,0 +1,153 @@
++jseqcr
+<p>Suppose a Jeroo starts in this world:</p>
+<?GRID - start 4 4 1-1 N ?>
+<br/>
+<p>Write a sequence of instructions that makes the world end up like this:</p>
+<?GRID - end 4 3 3-3 N 2-3 3-2 3-3 ?>
+--
+
+;;
++jseqgrid
+<p>Suppose a Jeroo named 'bob' has this sequence of instructions:</p>
+<div class="code">
+bob.hop();
+bob.plant();
+bob.turn(RIGHT);
+bob.hop(2);
+bob.plant();
+bob.turn(LEFT);
+bob.hop();
+bob.plant();
+</div>
+<p>On the world, place beepers where they would end up when this program runs.</p>
+<?GRID kseqgrid 5 5 3-3 N ?>
+--
+##
+;;
++jseqgrid2
+<p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+move();
+turnLeft();
+move();
+turnLeft();
+putBeeper();
+move();
+putBeeper();
+</div>
+<p>On the world, place beepers where they would end up when this program runs.</p>
+<?GRID kseqgrid2 5 5 3-3 W ?>
+--
+##
+;;
++jwallmove
+<p>Suppose a Jeroo is facing a net.  What kappens if s/he is given a
+<span class="code">hop()</span> command?</p>
+--
+nothing:
+Nothing at all happens.  The Jeroo does not follow the command.
+.
+back:
+The Jeroo moves backward, away from the wall.
+.
+error:
+The Jeroo tries to move forward, causing an error.
+.
+moves:
+The Jeroo moves forward, sucessfully.
+.
+;;
++jwallturn
+<p>Suppose there is water to the left of a Jeroo.  What happens if the Jeroo is given a
+<span class="code">turnLeft()</span> command?</p>
+--
+nothing:
+Nothing at all happens.  Karel does not follow the command.
+.
+right:
+Karel turns right, away from the wall.
+.
+error:
+Karel tries to turn left, but reports an error instead.
+.
+left:
+Karel turns left, towards the wall.
+.
+;;
++rcxbasic1
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+}
+</div>
+<p>What will the <b>left wheel</b> do when this program runs?</p>
+--
+fwdshort:
+Move forward for a short time, then stop.
+.
+fwdtouch:
+Move forward until the robot touches something, then stop.
+.
+fwdindef:
+Keep moving forward, even if it the robot touches something.
+.
+nothing:
+The left wheel will not do anything.
+.
+;;
++rcxbasic2
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+}
+</div>
+<p>What will the <b>right wheel</b> do when this program runs?</p>
+--
+fwdshort:
+Move forward for a short time, then stop.
+.
+fwdtouch:
+Move forward until the robot touches something, then stop.
+.
+fwdindef:
+Keep moving forward, even if it the robot touches something.
+.
+nothing:
+The right wheel will not do anything.
+.
+;;
++rcxleftcr
+Write a complete Interactive C program to make the robot rotate to the left:
+--
+
+;;
++rcxfdbkseq
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+	fd(C);
+	bk(C);
+	fd(B);
+}
+</div>
+<p>Describe the motion of the whole robot when this program is run.</p>
+--
+
+;;
+%%;;
+none
+	future
+A:k3	Karel Activity 3
+	kseqcr
+	kseqgrid
+	kseqgrid2
+	kwallmove
+	kwallturn
+B:c3	Lego Activity 3
+	rcxbasic1
+	rcxbasic2
+	rcxleftcr
+	rcxfdbkseq

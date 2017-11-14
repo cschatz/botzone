@@ -1,0 +1,377 @@
+gender		1	none	
+grade		2	none	
+age		3	none	
+aboutme		4	none	
+aboutschoo		5	none	
+scratchlik		6	none	
+selfintel	inc1	7	none	
+selfintel	ent1	7	none	
+selfintel	inc2	7	none	
+selfintel	ent2	7	none	
+selfintel	inc3	7	none	
+selfintel	ent3	7	none	
+scratchfut		8	none	
+compintel	ent3	9	none	
+compintel	inc1	9	none	
+compintel	ent1	9	none	
+compintel	inc2	9	none	
+compintel	ent2	9	none	
+compintel	inc3	9	none	
+scratchund		10	none	
+scratchoth		11	none	
+gradplan		12	none	
+logolike		15	p2	Activity P2
+logofut		16	p2	Activity P2
+logound		17	p2	Activity P2
+logoother		18	p2	Activity P2
+everdone	pub	19	none	
+everdone	creategame	19	none	
+everdone	playmuog	19	none	
+everdone	webhand	19	none	
+everdone	discuss	19	none	
+everdone	pubsite	19	none	
+everdone	createmov	19	none	
+everdone	playvid	19	none	
+everdone	createani	19	none	
+everdone	webtool	19	none	
+everdone	madedb	19	none	
+everdone	robotinv	19	none	
+everdone	createmus	19	none	
+everdone	progcode	19	none	
+everdone	createart	19	none	
+everdone	multmed	19	none	
+everdone	simulate	19	none	
+everdone	designmod	19	none	
+attitude	nervous	20	c1	Lego Activitity 1
+attitude	knowimport	20	c1	Lego Activitity 1
+attitude	compsint	20	c1	Lego Activitity 1
+attitude	uncomfort	20	c1	Lego Activitity 1
+attitude	learnfun	20	c1	Lego Activitity 1
+attitude	feelconf	20	c1	Lego Activitity 1
+attitude	workwell	20	c1	Lego Activitity 1
+attitude	learnmore	20	c1	Lego Activitity 1
+attitude	goodwith	20	c1	Lego Activitity 1
+attitude	classes	20	c1	Lego Activitity 1
+attitude	knowimport	21	k1	Karel Activity 1
+attitude	compsint	21	k1	Karel Activity 1
+attitude	uncomfort	21	k1	Karel Activity 1
+attitude	learnfun	21	k1	Karel Activity 1
+attitude	feelconf	21	k1	Karel Activity 1
+attitude	workwell	21	k1	Karel Activity 1
+attitude	learnmore	21	k1	Karel Activity 1
+attitude	goodwith	21	k1	Karel Activity 1
+attitude	classes	21	k1	Karel Activity 1
+attitude	nervous	21	k1	Karel Activity 1
+future	compspec	22	none	
+future	webdes	22	none	
+future	majCS	22	none	
+future	compteach	22	none	
+future	program	22	none	
+future	compwork	22	none	
+future	compclass	22	none	
+future	startbus	22	none	
+future	engineer	22	none	
+kseqcr		23	k3	Karel Activity 3
+kseqgrid		24	k3	Karel Activity 3
+kseqgrid2		25	k3	Karel Activity 3
+kwallmove		26	k3	Karel Activity 3
+kwallturn		27	k3	Karel Activity 3
+rcxbasic1		28	c3	Lego Activity 3
+rcxbasic2		29	c3	Lego Activity 3
+rcxleftcr		30	c3	Lego Activity 3
+rcxfdbkseq		31	c3	Lego Activity 3
+fselfhope		32	none	
+fselfprob		33	none	
+fselffear		34	none	
+eleccity		35	none	
+lmood		36	j1	Jeroo Activity 5
+effort		37	j1	Jeroo Activity 5
+lmood		38	c5	Lego Activity 5
+effort		39	c5	Lego Activity 5
+jseqgrid		40	k6	Jeroo Activity 6
+jseqgrid2		41	k6	Jeroo Activity 6
+jnetmove		42	k6	Jeroo Activity 6
+jdebugs		43	k6	Jeroo Activity 6
+rcxbasic3		44	c5	Lego Activity 5
+rcxbasic4		45	c5	Lego Activity 5
+rcxrightcr		46	c5	Lego Activity 5
+cdebugs		47	c5	Lego Activity 5
+effic	finishself	48	none	
+effic	finishstar	48	none	
+effic	fixerror	48	none	
+effic	finishcall	48	none	
+effic	writesimp	48	none	
+lmood		49	none	
+effort		50	none	
+jwhilegr		51	k7	Jeroo Activity 7
+jwhilegr2		52	k7	Jeroo Activity 7
+jwhilemc		53	k7	Jeroo Activity 7
+jwhilegr3		54	k7	Jeroo Activity 7
+jseqcr		55	k7	Jeroo Activity 7
+jdebugs2		56	k7	Jeroo Activity 7
+jnetmove		57	k7	Jeroo Activity 7
+effic	fixerror	58	k7	Jeroo Activity 7
+effic	finishcall	58	k7	Jeroo Activity 7
+effic	writesimp	58	k7	Jeroo Activity 7
+effic	finishself	58	k7	Jeroo Activity 7
+effic	finishstar	58	k7	Jeroo Activity 7
+lmood		59	k7	Jeroo Activity 7
+effort		60	k7	Jeroo Activity 7
+attitude	knowimport	61	k7	Jeroo Activity 7
+attitude	compsint	61	k7	Jeroo Activity 7
+attitude	uncomfort	61	k7	Jeroo Activity 7
+attitude	learnfun	61	k7	Jeroo Activity 7
+attitude	feelconf	61	k7	Jeroo Activity 7
+attitude	workwell	61	k7	Jeroo Activity 7
+attitude	learnmore	61	k7	Jeroo Activity 7
+attitude	goodwith	61	k7	Jeroo Activity 7
+attitude	classes	61	k7	Jeroo Activity 7
+attitude	nervous	61	k7	Jeroo Activity 7
+compintel	inc1	62	k7	Jeroo Activity 7
+compintel	ent1	62	k7	Jeroo Activity 7
+compintel	inc2	62	k7	Jeroo Activity 7
+compintel	ent2	62	k7	Jeroo Activity 7
+compintel	inc3	62	k7	Jeroo Activity 7
+compintel	ent3	62	k7	Jeroo Activity 7
+future	program	63	k7	Jeroo Activity 7
+future	compwork	63	k7	Jeroo Activity 7
+future	compclass	63	k7	Jeroo Activity 7
+future	startbus	63	k7	Jeroo Activity 7
+future	engineer	63	k7	Jeroo Activity 7
+future	compspec	63	k7	Jeroo Activity 7
+future	webdes	63	k7	Jeroo Activity 7
+future	majCS	63	k7	Jeroo Activity 7
+future	compteach	63	k7	Jeroo Activity 7
+selfintel	ent1	64	k7	Jeroo Activity 7
+selfintel	inc2	64	k7	Jeroo Activity 7
+selfintel	ent2	64	k7	Jeroo Activity 7
+selfintel	inc3	64	k7	Jeroo Activity 7
+selfintel	ent3	64	k7	Jeroo Activity 7
+selfintel	inc1	64	k7	Jeroo Activity 7
+cwhilecr		65	c6	Lego Activity 6
+cwhilemc		66	c6	Lego Activity 6
+cwhilepr		67	c6	Lego Activity 6
+cwhilemc2		68	c6	Lego Activity 6
+cwhilemc3		69	c6	Lego Activity 6
+cdebugs2		70	c6	Lego Activity 6
+cinterpwh		71	c6	Lego Activity 6
+effic	finishself	72	c6	Lego Activity 6
+effic	finishstar	72	c6	Lego Activity 6
+effic	fixerror	72	c6	Lego Activity 6
+effic	finishcall	72	c6	Lego Activity 6
+effic	writesimp	72	c6	Lego Activity 6
+lmood		73	c6	Lego Activity 6
+effort		74	c6	Lego Activity 6
+attitude	knowimport	75	c6	Lego Activity 6
+attitude	compsint	75	c6	Lego Activity 6
+attitude	uncomfort	75	c6	Lego Activity 6
+attitude	learnfun	75	c6	Lego Activity 6
+attitude	feelconf	75	c6	Lego Activity 6
+attitude	workwell	75	c6	Lego Activity 6
+attitude	learnmore	75	c6	Lego Activity 6
+attitude	goodwith	75	c6	Lego Activity 6
+attitude	classes	75	c6	Lego Activity 6
+attitude	nervous	75	c6	Lego Activity 6
+compintel	ent1	76	c6	Lego Activity 6
+compintel	inc2	76	c6	Lego Activity 6
+compintel	ent2	76	c6	Lego Activity 6
+compintel	inc3	76	c6	Lego Activity 6
+compintel	ent3	76	c6	Lego Activity 6
+compintel	inc1	76	c6	Lego Activity 6
+future	compclass	77	c6	Lego Activity 6
+future	startbus	77	c6	Lego Activity 6
+future	engineer	77	c6	Lego Activity 6
+future	compspec	77	c6	Lego Activity 6
+future	webdes	77	c6	Lego Activity 6
+future	majCS	77	c6	Lego Activity 6
+future	compteach	77	c6	Lego Activity 6
+future	program	77	c6	Lego Activity 6
+future	compwork	77	c6	Lego Activity 6
+selfintel	ent2	78	c6	Lego Activity 6
+selfintel	inc3	78	c6	Lego Activity 6
+selfintel	ent3	78	c6	Lego Activity 6
+selfintel	inc1	78	c6	Lego Activity 6
+selfintel	ent1	78	c6	Lego Activity 6
+selfintel	inc2	78	c6	Lego Activity 6
+jfunc1		79	k8	Jeroo Activity 8
+jwhilegr3a		80	k8	Jeroo Activity 8
+jwhilemc2		81	k8	Jeroo Activity 8
+jseqcr2		82	k8	Jeroo Activity 8
+jdebugs2		83	k8	Jeroo Activity 8
+jfunc2		84	k8	Jeroo Activity 8
+jseqgrid		85	k8	Jeroo Activity 8
+jseqgrid2		86	k8	Jeroo Activity 8
+attitude	compsint	87	k8	Jeroo Activity 8
+attitude	uncomfort	87	k8	Jeroo Activity 8
+attitude	learnfun	87	k8	Jeroo Activity 8
+attitude	feelconf	87	k8	Jeroo Activity 8
+attitude	workwell	87	k8	Jeroo Activity 8
+attitude	learnmore	87	k8	Jeroo Activity 8
+attitude	goodwith	87	k8	Jeroo Activity 8
+attitude	classes	87	k8	Jeroo Activity 8
+attitude	nervous	87	k8	Jeroo Activity 8
+attitude	knowimport	87	k8	Jeroo Activity 8
+effic	fixerror	88	k8	Jeroo Activity 8
+effic	finishcall	88	k8	Jeroo Activity 8
+effic	writesimp	88	k8	Jeroo Activity 8
+effic	finishself	88	k8	Jeroo Activity 8
+effic	finishstar	88	k8	Jeroo Activity 8
+future	compspec	89	k8	Jeroo Activity 8
+future	webdes	89	k8	Jeroo Activity 8
+future	majCS	89	k8	Jeroo Activity 8
+future	compteach	89	k8	Jeroo Activity 8
+future	program	89	k8	Jeroo Activity 8
+future	compwork	89	k8	Jeroo Activity 8
+future	compclass	89	k8	Jeroo Activity 8
+future	startbus	89	k8	Jeroo Activity 8
+future	engineer	89	k8	Jeroo Activity 8
+lmood		90	k8	Jeroo Activity 8
+effort		91	k8	Jeroo Activity 8
+cfunc1		92	c6	Lego Activity 6
+cfunc2		93	c6	Lego Activity 6
+cfunc3		94	c6	Lego Activity 6
+cwhilecr2		95	c6	Lego Activity 6
+cwhilepr2		96	c6	Lego Activity 6
+cwhilemc2		97	c6	Lego Activity 6
+cdebugs3		98	c6	Lego Activity 6
+cinterpwh2		99	c6	Lego Activity 6
+effic	finishstar	100	c6	Lego Activity 6
+effic	fixerror	100	c6	Lego Activity 6
+effic	finishcall	100	c6	Lego Activity 6
+effic	writesimp	100	c6	Lego Activity 6
+effic	finishself	100	c6	Lego Activity 6
+lmood		101	c6	Lego Activity 6
+effort		102	c6	Lego Activity 6
+attitude	compsint	103	c6	Lego Activity 6
+attitude	uncomfort	103	c6	Lego Activity 6
+attitude	learnfun	103	c6	Lego Activity 6
+attitude	feelconf	103	c6	Lego Activity 6
+attitude	workwell	103	c6	Lego Activity 6
+attitude	learnmore	103	c6	Lego Activity 6
+attitude	goodwith	103	c6	Lego Activity 6
+attitude	classes	103	c6	Lego Activity 6
+attitude	nervous	103	c6	Lego Activity 6
+attitude	knowimport	103	c6	Lego Activity 6
+future	program	104	c6	Lego Activity 6
+future	compwork	104	c6	Lego Activity 6
+future	compclass	104	c6	Lego Activity 6
+future	startbus	104	c6	Lego Activity 6
+future	engineer	104	c6	Lego Activity 6
+future	compspec	104	c6	Lego Activity 6
+future	webdes	104	c6	Lego Activity 6
+future	majCS	104	c6	Lego Activity 6
+future	compteach	104	c6	Lego Activity 6
+lang		105	ka	all Jeroo activities
+homelang		106	ka	all Jeroo activities
+langfirst		107	ka	all Jeroo activities
+effic	fixerror	108	ka	all Jeroo activities
+effic	finishcall	108	ka	all Jeroo activities
+effic	writesimp	108	ka	all Jeroo activities
+effic	finishself	108	ka	all Jeroo activities
+effic	finishstar	108	ka	all Jeroo activities
+jfunc4		109	ka	all Jeroo activities
+jfunc5		110	ka	all Jeroo activities
+jfunc6		111	ka	all Jeroo activities
+jwhilegr2		112	ka	all Jeroo activities
+jwhilegr4		113	ka	all Jeroo activities
+jseqcr3		114	ka	all Jeroo activities
+jifseq		115	ka	all Jeroo activities
+jifcr		116	ka	all Jeroo activities
+jifmc		117	ka	all Jeroo activities
+jseqgrid		118	ka	all Jeroo activities
+lmood		119	cc	the Lego Activity Challenge
+effort		120	cc	the Lego Activity Challenge
+lang		121	ca	all Lego activities
+homelang		122	ca	all Lego activities
+langfirst		123	ca	all Lego activities
+effic	finishstar	124	ca	all Lego activities
+effic	fixerror	124	ca	all Lego activities
+effic	finishcall	124	ca	all Lego activities
+effic	writesimp	124	ca	all Lego activities
+effic	finishself	124	ca	all Lego activities
+cfunc4		125	ca	all Lego activities
+cfunc5		126	ca	all Lego activities
+cfunc6		127	ca	all Lego activities
+cifcr		128	ca	all Lego activities
+cifcr2		129	ca	all Lego activities
+cifmc		130	ca	all Lego activities
+cwhilemc4		131	ca	all Lego activities
+cifmc2		132	ca	all Lego activities
+rcxbasic3		133	ca	all Lego activities
+cdebugs		134	ca	all Lego activities
+lmood		135	kc	the Jeroo Activity challenge
+effort		136	kc	the Jeroo Activity challenge
+bornus		137	none	
+whenimm		138	none	
+ethnicity		139	none	
+recmath		140	none	
+recsci		141	none	
+classes		142	none	
+bestat		143	none	
+worstat		144	none	
+enjoymost		145	none	
+enjoyleast		146	none	
+projsat		147	none	
+projeff		148	none	
+selfintel	inc3	149	none	
+selfintel	ent3	149	none	
+selfintel	inc1	149	none	
+selfintel	ent1	149	none	
+selfintel	inc2	149	none	
+selfintel	ent2	149	none	
+effic	fixerror	150	none	
+effic	finishcall	150	none	
+effic	writesimp	150	none	
+effic	finishself	150	none	
+effic	finishstar	150	none	
+compintel	ent2	151	none	
+compintel	inc3	151	none	
+compintel	ent3	151	none	
+compintel	inc1	151	none	
+compintel	ent1	151	none	
+compintel	inc2	151	none	
+rcxbasic1		152	none	
+rcxbasic2		153	none	
+jseqgrid		154	none	
+jseqcr		155	none	
+rcxrightcr		156	none	
+jseqcr3		157	none	
+future	compclass	158	none	
+future	startbus	158	none	
+future	engineer	158	none	
+future	compspec	158	none	
+future	webdes	158	none	
+future	majCS	158	none	
+future	compteach	158	none	
+future	program	158	none	
+future	compwork	158	none	
+cwhilecr2		159	none	
+cwhilecr		160	none	
+jwhilegr		161	none	
+jwhilegr4		162	none	
+cwhilemc		163	none	
+cwhilemc2		164	none	
+cwhilemc4		165	none	
+jwhilemc		166	none	
+jwhilemc2		167	none	
+cifmc		168	none	
+cifmc2		169	none	
+jifmc		170	none	
+jifseq		171	none	
+rcxbasic3		172	none	
+jnetmove		173	none	
+cdebugs		174	none	
+jdebugs2		175	none	
+cfunc1		176	none	
+cfunc3		177	none	
+cfunc4		178	none	
+cfunc6		179	none	
+jfunc1		180	none	
+jfunc4		181	none	
+jfunc5		182	none	
+jfunc6		183	none	
+jeroofut		184	none	
+legofut		185	none	
+jeroodif		186	none	
+legodif		187	none	
+misccomm		188	none	

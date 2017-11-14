@@ -1,0 +1,415 @@
++jfunc4
+<p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	hop();
+	hop();
+	plant();
+	hop();
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(LEFT);
+alice.sequence();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<?GRID jfunc4 5 5 1-2 E ?>
+--
+##
+;;
++jfunc5
+<p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	while (!isWater(AHEAD))
+	{
+		hop();
+	}	
+
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(RIGHT);
+alice.plant();
+alice.sequence();
+alice.plant();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<?GRID jfunc5 5 5 1-1 N ?>
+--
+##
+;;
++jfunc6
+<p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	while (!isWater(AHEAD))
+	{
+		hop();
+		plant();
+	}	
+
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(LEFT);
+alice.sequence();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<?GRID jfunc6 5 5 4-2 N ?>
+--
+##
+;;
++jwhilegr4
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isWater(AHEAD))
+{
+	mary.hop();  
+}
+mary.turn(RIGHT);
+while (mary.isWater(LEFT))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jwhilegr4 5 5 1-3 E ?>
+--
+##
+;;
++jseqcr3
+<p>Suppose a Jeroo starts in this world:</p>
+<?GRID - start 3 4 2-1 N ?>
+<br/>
+<p>Write a sequence of instructions, <b>using a while statement</b>,
+ that makes the world end up like this:</p>
+<?GRID - end 4 3 0-0 N 2-1 2-2 2-3 1-4 ?>
+--
+
+;;
++jifseq
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isWater(AHEAD))
+{
+	mary.hop();  
+	if (mary.isFlower(RIGHT))
+	{
+		mary.plant();
+	}
+}
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jifseq 5 5 1-4 E 1-5 2-5 4-5 2-3 4-3 5-3 ?>
+--
+##
+;;
++jifcr
+<p>Suppose a Jeroo starts in this world:</p>
+<?GRID - start 5 5 2-1 N 2-2 2-4 ?>
+<br/>
+<p>Write a sequence of instructions, <b>using an if statement</b>,
+ that makes the world end up like this:</p>
+<?GRID - end 5 5 0-0 N 2-2 2-3 2-4 2-5 ?>
+--
+
+;;
++jifmc
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+if (!mary.isFlower(LEFT))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>and that she starts in this world:</p>
+<?GRID - mcstart 3 2 1-1 E 1-2 2-2 3-2 ?>
+<p>Which of the pictures below shows where flowers would be after this program runs?</p>
+--
+all:
+<?GRID - manswer 3 2 0-0 E 1-2 2-2 3-2 1-1 2-1 3-1 ?>
+.
+notfirst:
+<?GRID - manswer 3 2 0-0 E 1-2 2-2 3-2 2-1 3-1 ?>
+.
+first:
+<?GRID - manswer 3 2 0-0 E 1-2 2-2 3-2 1-1 ?>
+.
+middle:
+<?GRID - manswer 3 2 0-0 E 1-2 2-2 3-2 2-1 ?>
+.
+;;
++cfunc4
+<p>Suppose your robot has this entire Interactive C program:</p>
+<div class="code">
+void shape()
+{
+	fd(A);
+	fd(C);
+	sleep(2.0);
+	fd(A);
+	bk(C);
+	sleep(2.0);
+}
+
+void main()
+{
+	shape();
+	shape();
+}
+</div>
+<p>What will the robot do when the program runs?  <b>Be specific.</b></p>
+--
+
+;;
++cfunc5
+<p>Suppose your robot has this entire Interactive C program:</p>
+<div class="code">
+void mycmd()
+{
+	while (digital(1) == 0)
+	{
+		fd(A);
+		bk(C);
+	}
+}
+
+void main()
+{
+	fd(A);
+	fd(C);
+	sleep(1.0);
+	mycmd();
+	beep();
+}
+</div>
+<p>What will this do when it runs?  Be as specific as possible.</p>
+<?TEXT
+First, it will ____________________________________
+
+Then it will  ____________________________________
+
+Finally it will _____________________________________
+
+?>
+--
+##
+;;
++cfunc6
+<p>Now, suppose your robot has this program:</p>
+<div class="code">
+void go()
+{
+	while (digital(2) == 1)
+	{
+		beep();
+	}
+}
+
+void main()
+{
+	go();
+}
+</div>
+<p>Suppose the robot is <b>already touching a wall</b> when this runs.  How many times will it beep?</p>
+--
+manyuntil:
+It will beep many times, stopping when the robot is moved away from the wall.
+.
+once:
+It will beep exactly once, no matter what happens.
+.
+manyindef:
+It will beep many times, and continue to beep no matter what happens.
+.
+nothing:
+It will not beep at all, no matter what happens.
+.
+;;
++cifcr
+<p>Suppose your robot has a touch sensor connected as sensor #1, and a program with this sequence of instructions:</p>
+<div class="code">
+if (digital(1) == 0)
+{
+	fd(A);
+	fd(C);
+	sleep(2.0);
+}
+alloff();
+beep();
+</div>
+<p>Describe in detail what the robot does when the program runs.</p>
+--
+
+;;
++cifcr2
+<p>Write a complete Interactive C program, <b>using an if statement</b>, for a robot to:</p>
+<ul>
+<li>If it starts touching a wall, move backwards for three seconds.</li>
+<li>If it does not start touching a wall, beep three times</li>
+</ul>
+--
+
+;;
++cifmc
+<p>Suppose your robot has this program:</p>
+<div class="code">
+void main()
+{
+	if (digital(2) == 1)
+	{
+		beep();
+	}
+}
+</div>
+<p>What Will happen when this program runs?</p>
+--
+yesonce:
+If the bumper is being pressed it beeps exactly once
+.
+noonce:
+If the bumper is NOT being pressed it beeps exactly once.
+.
+yesmany:
+If the bumper is being touched it beeps repeatedly.
+.
+nomany:
+If the bumper is NOT being touched it beeps repeatedly
+.
+;;
++cwhilemc4
+<p>Suppose your robot has this program:</p>
+<div class="code">
+void main()
+{
+	while (digital(2) == 1)
+	{
+		beep();
+	}
+}
+</div>
+<p>What Will happen when this program runs?</p>
+--
+yesonce:
+If the bumper is being pressed it beeps exactly once
+.
+noonce:
+If the bumper is NOT being pressed it beeps exactly once.
+.
+yesmany:
+If the bumper is being touched it beeps repeatedly.
+.
+nomany:
+If the bumper is NOT being touched it beeps repeatedly
+.
+;;
++cifmc2
+<p>Suppose your robot has a light sensor as Sensor #1, and has this program:</p>
+<div class="code">
+void main()
+{
+	while (1==1)
+	{
+		fd(A);
+		fd(C);
+		if (light(1) > 750)
+		{
+			beep();
+		}
+	}
+}
+</div>
+<p>As the robot moves forward, it crosses patches of white and black.
+Which of these best describes how it behaves?</p>
+--
+blonce:
+It beeps once whenever it is on a black patch.
+.
+whonce:
+It beeps once whenever it is on a white patch.
+.
+blmany:
+It beeps repeatedly whenever it is on a black patch.
+.
+whmany:
+It beeps repeatedly whenever it is on a white patch.
+.
+;;
+lang	What language(s) is/are you <b>comfortable</b> speaking <b>now</b>? Select all that apply.	multi
+	Eng	English
+	Spa	Spanish
+	Can	Cantonese
+	Man	Mandarin
+	Tag	Tagalog
+	other	Other (please specify)
+;;
+homelang	What languages do anyone <b>in your home</b> speak? Select all that apply.	multi
+	Eng	English
+	Spa	Spanish
+	Can	Cantonese
+	Man	Mandarin
+	Tag	Tagalog
+	other	Other (please specify)
+;;
+langfirst	What language(s) was/were your <b>first language</b>?  Select all that apply.	multi
+	Eng	English
+	Spa	Spanish
+	Can	Cantonese
+	Man	Mandarin
+	Tag	Tagalog
+	other	Other (please specify)
+;;
+%%;;
+A:ka	all Jeroo activities
+	lang
+	homelang
+	langfirst
+	effic
+	jfunc4
+	jfunc5
+	jfunc6
+	jwhilegr2
+	jwhilegr4
+	jseqcr3
+	jifseq
+	jifcr
+	jifmc
+	jseqgrid
+A:cc	the Lego Activity Challenge
+	lmood
+	effort
+B:ca	all Lego activities
+	lang
+	homelang
+	langfirst
+	effic
+	cfunc4
+	cfunc5
+	cfunc6
+	cifcr
+	cifcr2
+	cifmc
+	cwhilemc4
+	cifmc2
+	rcxbasic3
+	cdebugs
+B:kc	the Jeroo Activity challenge
+	lmood
+	effort
+
+

@@ -1,0 +1,44 @@
+fselfhope	Many people have in mind some things they want to be like in the future regardless of how likely it is that they will actually be that way or do those things.  These are the kinds of selves that you would <b>hope to be</b> like.  Please list three possible selves that you most hope to describe you in the future.	long
+;;
+fselfprob	Please list three possible selves that are <b>most likely</b> to be true of you in the future.	long
+;;
+fselffear	Please list three possible selves that you <b>most fear or worry about</b> being in the future.	long
+;;
+lmood	How would you rate your learning mood today?
+	1	1 - Very bored
+	2	2 - Moderately bored
+	3	3 - Slightly bored
+	4	4 - Slightly interested to learn
+	5	5 - Moderately interested to learn
+	6	6 - Very interested to learn
+;;
+effort	How would you rate your effort today?
+	1	1 - No effort
+	2	2
+	3	3
+	4	4
+	5	5
+	6	6 - Maximum effort
+;;
+eleccity	If you tried ElectroCity yesterday, how much did you like it?
+	0	** I did not try ElectroCity **
+	1	1 - I disliked it a lot
+	2	2 - I disliked it moderately
+	3	3 - I disliked it a little
+	4	4 - I liked it a little
+	5	5 - I liked it moderately
+	6	6 - I liked it a lot
+;;
+%%;;
+none
+	fselfhope
+	fselfprob
+	fselffear
+	eleccity
+A:j1	Jeroo Activity 5
+	lmood
+	effort
+B:c5	Lego Activity 5
+	lmood
+	effort
+

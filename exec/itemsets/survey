@@ -1,0 +1,20 @@
+gender	Gender:
+	M	Male
+	F	Female
+;
+grade	Grade:	9-12
+;
+age	Age:	short
+;
+aboutme	Please introduce yourself in 4-6 sentences.	long
+;
+aboutschool	What would you tell someone who does not go here about this school?  Please be honest.	long
+;
+%%;
+none
+	gender
+	grade
+	age
+	aboutme
+none
+	aboutschool

@@ -1,0 +1,880 @@
+[cdebugs]
+<p>The Interactive C program below has some errors in it.  Change it to fix the errors:</p>
+<?TEXT
+method main
+{
+   fd(A);
+   fd(C);
+   sleep(5.0)
+   allofff();
+}
+?>
+------
+
+[cdebugs2]
+<p>The Interactive C program below has some errors in it.  Change it to fix the errors:</p>
+<?TEXT
+void main()
+{
+   while (digital(1) == 0);
+   {
+      fd(A);
+      fd C 
+   }
+   sleep();
+   alloff() 
+}
+?>
+------
+
+[cdebugs3]
+<p>The Interactive C program below has some errors in it.  Change it to fix the errors:</p>
+<?TEXT
+void cmd()
+{
+	fd(a);
+}
+
+void main()
+{
+   while (digital(1) == 0)
+   {
+	cmd;
+   }
+   alloff() 
+}
+?>
+------
+
+[cfunc1]
+<p>Suppose your robot has this entire Interactive C program:</p>
+<div class="code">
+void multi()
+{
+	beep();
+	beep();
+}
+
+void main()
+{
+	multi();
+	multi();
+	multi();
+}
+</div>
+<p>What will the robot do when the program runs?  <b>Be specific.</b></p>
+------
+
+[cfunc2]
+<p>Suppose your robot has this entire Interactive C program:</p>
+<div class="code">
+void mycmd()
+{
+	while (digital(1) == 0)
+	{
+		fd(A);
+		fd(C);
+	}
+}
+
+void main()
+{
+	beep();
+	mycmd();
+	beep();
+}
+</div>
+<p>What will this do when it runs?  Be as specific as possible.</p>
+<?TEXT
+First, it will ____________________________________
+
+Then it will  ____________________________________
+
+Finally it will _____________________________________
+
+?>
+------
+
+[cfunc3]
+<p>Now, suppose your robot has this program:</p>
+<div class="code">
+oid go()
+{
+	while (digital(2) == 1)
+	{
+		beep();
+	}
+}
+
+void main()
+{
+	beep();
+	go();
+}
+</div>
+<p>Suppose the robot is <b>already touching a wall</b> when this runs.  How many times will it beep?
+------
+
+[cfunc4]
+<p>Suppose your robot has this entire Interactive C program:</p>
+<div class="code">
+void shape()
+{
+	fd(A);
+	fd(C);
+	sleep(2.0);
+	fd(A);
+	bk(C);
+	sleep(2.0);
+}
+
+void main()
+{
+	shape();
+	shape();
+}
+</div>
+<p>What will the robot do when the program runs?  <b>Be specific.</b></p>
+------
+
+[cfunc5]
+<p>Suppose your robot has this entire Interactive C program:</p>
+<div class="code">
+void mycmd()
+{
+	while (digital(1) == 0)
+	{
+		fd(A);
+		bk(C);
+	}
+}
+
+void main()
+{
+	fd(A);
+	fd(C);
+	sleep(1.0);
+	mycmd();
+	beep();
+}
+</div>
+<p>What will this do when it runs?  Be as specific as possible.</p>
+<?TEXT
+First, it will ____________________________________
+
+Then it will  ____________________________________
+
+Finally it will _____________________________________
+
+?>
+------
+
+[cfunc6]
+<p>Now, suppose your robot has this program:</p>
+<div class="code">
+void go()
+{
+	while (digital(2) == 1)
+	{
+		beep();
+	}
+}
+
+void main()
+{
+	go();
+}
+</div>
+<p>Suppose the robot is <b>already touching a wall</b> when this runs.  How many times will it beep?</p>
+------
+
+[cifcr]
+<p>Suppose your robot has a touch sensor connected as sensor #1, and a program with this sequence of instructions:</p>
+<div class="code">
+if (digital(1) == 0)
+{
+	fd(A);
+	fd(C);
+	sleep(2.0);
+}
+alloff();
+beep();
+</div>
+<p>Describe in detail what the robot does when the program runs.</p>
+------
+
+[cifcr2]
+<p>Write a complete Interactive C program, <b>using an if statement</b>, for a robot to:</p>
+<ul>
+<li>If it starts touching a wall, move backwards for three seconds.</li>
+<li>If it does not start touching a wall, beep three times</li>
+</ul>
+------
+
+[cifmc]
+<p>Suppose your robot has this program:</p>
+<div class="code">
+void main()
+{
+	if (digital(2) == 1)
+	{
+		beep();
+	}
+}
+</div>
+<p>What Will happen when this program runs?</p>
+------
+
+[cifmc2]
+<p>Suppose your robot has a light sensor as Sensor #1, and has this program:</p>
+<div class="code">
+void main()
+{
+	while (1==1)
+	{
+		fd(A);
+		fd(C);
+		if (light(1) > 750)
+		{
+			beep();
+		}
+	}
+}
+</div>
+<p>As the robot moves forward, it crosses patches of white and black.
+Which of these best describes how it behaves?</p>
+------
+
+[cinterpwh]
+<p>Suppose you had a robot running this program - note that it is similar to many of
+the others, but with a <b>0</b> where we usually have <b>1</b>.</p>
+<div class="code">
+void main()
+{
+   while (digital(1) == 1);
+   {
+	beep();
+   }
+}
+</div>
+<p>What do you think this will do when it is run?  Does it depend what situation the robot is in?
+Be as specific as you can.</p>
+------
+
+[cinterpwh2]
+<p>Suppose your robot has this program:</p>
+<div class="code">
+void main()
+{
+   while (digital(1) == 1);
+   {
+	beep();
+   }
+   fd(A);
+   fd(C);
+}
+</div>
+<p>Describe the way the robot will behave in these two situations - be specific:</p>
+<?TEXT
+(A) If it is already touching a wall when it starts.
+
+
+
+(B) If it is not touching a wall when it starts.
+
+
+?>
+------
+
+[cwhilecr]
+<p>Suppose your robot has a touch sensor connected as sensor #1, and a program with this sequence of instructions:</p>
+<div class="code">
+beep();
+
+while (digital(1) == 0)
+{
+	beep();
+	fd(A);
+	fd(C);
+}
+
+alloff();
+</div>
+<p>Describe in detail what the robot does when the program runs.</p>
+------
+
+[cwhilecr2]
+<p>Suppose your robot has a touch sensor connected as sensor #1, and a program with this sequence of instructions:</p>
+<div class="code">
+while (digital(1) == 0)
+{
+	fd(A);
+	fd(C);
+}
+alloff();
+beep();
+</div>
+<p>Describe in detail what the robot does when the program runs.</p>
+------
+
+[cwhilemc]
+<p>Now, suppose it has this entire program:</p>
+<div class="code">
+void main()
+{
+  while (digital(1) == 0)
+  {
+	beep();
+  }
+}
+</div>
+<p>What does the robot do when this program runs?</p>
+------
+
+[cwhilemc2]
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+   while (digital(1) == 0)
+   {
+      fd(A);
+      fd(C);
+   }
+   alloff();
+}
+</div>
+<p>What does the robot do when this program runs?</p>
+------
+
+[cwhilemc3]
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+   while (digital(1) == 0)
+   {
+      fd(A);
+      fd(C);
+   }
+}
+</div>
+<p>What does the robot do when this program runs?</p>
+------
+
+[cwhilemc4]
+<p>Suppose your robot has this program:</p>
+<div class="code">
+void main()
+{
+	while (digital(2) == 1)
+	{
+		beep();
+	}
+}
+</div>
+<p>What Will happen when this program runs?</p>
+------
+
+[cwhilepr]
+<p>Write a complete Interactive C program for a robot to:</p>
+<ul>
+<li>Spin around (either right or left) until the front sensor hits something...</li>
+<li>Then, move backwards for 2 seconds</li>
+<li>Then, beep.</li>
+</ul>
+------
+
+[cwhilepr2]
+<p>Write a complete Interactive C program (using new commands if you want)for a robot to:</p>
+<ul>
+<li>Move forward until the front sensor hits something...</li>
+<li>Then, turn left for two seconds...</li>
+<li>Then, stop.</li>
+</ul>
+------
+
+[jdebugs]
+<p>The Jeroo program below has some errors in it.  Change it to fix the errors:</p>
+<?TEXT
+method main()
+{
+   Jeroo mary = new Jeroo (1, 1, SOUTH);
+   mary.hop();
+   mary hop();
+   mary.turn(LEFT)
+}
+?>
+------
+
+[jdebugs2]
+<p>The Jeroo program below has some errors in it.  Change it to fix the errors:</p>
+<?TEXT
+method main()
+{
+   Jeroo mary = new Jeroo (1, 1, SOUTH);
+   while (!mary.isWater(AHEAD));
+   {
+      mary.hop();
+      mary.turn LEFT
+   }
+}
+?>
+------
+
+[jdebugs3]
+<p>The Jeroo program below has some errors in it.  Change it to fix the errors:</p>
+<?TEXT
+method main()
+{
+   Jeroo mary = new Jeroo (3, 1, west);
+   while (!mary.isNet(AHEAD));
+   {
+      hop();
+   }
+   mary.turn(LEFT);
+}
+?>
+------
+
+[jfunc1]
+<p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	hop();
+	plant();
+	hop();
+	plant();
+	hop();
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(RIGHT);
+alice.sequence();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<?GRID jfunc1 5 5 1-4 E ?>
+------
+
+[jfunc2]
+<p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	while (!isWater(AHEAD))
+	{
+		hop();
+	}	
+
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(LEFT);
+alice.sequence();
+alice.plant();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<?GRID jfunc2 5 5 2-1 N ?>
+------
+
+[jfunc4]
+<p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	hop();
+	hop();
+	plant();
+	hop();
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(LEFT);
+alice.sequence();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<?GRID jfunc4 5 5 1-2 E ?>
+------
+
+[jfunc5]
+<p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	while (!isWater(AHEAD))
+	{
+		hop();
+	}	
+
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(RIGHT);
+alice.plant();
+alice.sequence();
+alice.plant();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<?GRID jfunc5 5 5 1-1 N ?>
+------
+
+[jfunc6]
+<p>Suppose your partner has defined a new Jeroo command:</p>
+<div class="code">
+method sequence()
+{
+	while (!isWater(AHEAD))
+	{
+		hop();
+		plant();
+	}	
+
+}
+</div>
+<p>Then, you have a main program with this sequence in it:<p>
+<div class="code">
+alice.sequence();
+alice.turn(LEFT);
+alice.sequence();
+</div>
+<p>If the "alice" Jeroo starts as shown below, place flowers where they
+would be after the sequence runs.</p>
+<?GRID jfunc6 5 5 4-2 N ?>
+------
+
+[jifcr]
+<p>Suppose a Jeroo starts in this world:</p>
+<?GRID - start 5 5 2-1 N 2-2 2-4 ?>
+<br/>
+<p>Write a sequence of instructions, <b>using an if statement</b>,
+ that makes the world end up like this:</p>
+<?GRID - end 5 5 0-0 N 2-2 2-3 2-4 2-5 ?>
+------
+
+[jifmc]
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+if (!mary.isFlower(LEFT))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>and that she starts in this world:</p>
+<?GRID - mcstart 3 2 1-1 E 1-2 2-2 3-2 ?>
+<p>Which of the pictures below shows where flowers would be after this program runs?</p>
+------
+
+[jifseq]
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isWater(AHEAD))
+{
+	mary.hop();  
+	if (mary.isFlower(RIGHT))
+	{
+		mary.plant();
+	}
+}
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jifseq 5 5 1-4 E 1-5 2-5 4-5 2-3 4-3 5-3 ?>
+------
+
+[jnetmove]
+<p>Suppose a Jeroo is facing a net.  What kappens if the Jeroo is given a
+<span class="code">hop()</span> command?</p>
+------
+
+[jseqcr]
+<p>Suppose a Jeroo starts in this world:</p>
+<?GRID - start 4 3 1-2 N ?>
+<br/>
+<p>Write a sequence of instructions that makes the world end up like this:</p>
+<?GRID - end 4 3 0-0 N 2-2 3-2 4-2 3-2 ?>
+------
+
+[jseqcr2]
+<p>Suppose a Jeroo starts in this world:</p>
+<?GRID - start 4 3 1-3 N ?>
+<br/>
+<p>Write a sequence of instructions, <b>using a while statement</b>,
+ that makes the world end up like this:</p>
+<?GRID - end 4 3 0-0 N 2-3 3-3 4-3 ?>
+------
+
+[jseqcr3]
+<p>Suppose a Jeroo starts in this world:</p>
+<?GRID - start 3 4 2-1 N ?>
+<br/>
+<p>Write a sequence of instructions, <b>using a while statement</b>,
+ that makes the world end up like this:</p>
+<?GRID - end 4 3 0-0 N 2-1 2-2 2-3 1-4 ?>
+------
+
+[jseqgrid]
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+bob.hop();
+bob.plant();
+bob.turn(LEFT);
+bob.hop(2);
+bob.turn(RIGHT);
+bob.hop();
+bob.plant();
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jseqgrid 5 5 3-3 N ?>
+------
+
+[jseqgrid2]
+<p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+bob.hop();
+bob.turn(LEFT);
+bob.turn(LEFT);
+bob.hop(2);
+bob.plant();
+bob.hop();
+bob.plant();
+</div>
+<p>On the world, place beepers where they would end up when this program runs.</p>
+<?GRID jseqgrid2 5 5 3-3 W ?>
+------
+
+[jwhilegr]
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+mary.hop();
+mary.plant();
+while (!mary.isWater(AHEAD))
+{
+  mary.hop();
+}
+mary.plant();
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jwhilegr 5 5 2-4 S ?>
+------
+
+[jwhilegr2]
+<p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+mary.hop();
+while (mary.isFlower(LEFT))
+{
+	mary.plant();
+	mary.hop();  
+}
+mary.plant();
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jwhilegr2 5 5 2-5 S 3-2 3-3 3-4 ?>
+------
+
+[jwhilegr3]
+<p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+while (mary.isWater(LEFT))
+{
+	mary.hop();  
+}
+mary.turn(RIGHT);
+while (mary.isWater(LEFT))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jwhilegr3 5 5 1-1 N  ?>
+------
+
+[jwhilegr3a]
+<p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isWater(LEFT))
+{
+	mary.hop();  
+}
+mary.turn(LEFT);
+while (mary.isWater(RIGHT))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jwhilegr3a 5 5 1-3 E ?>
+------
+
+[jwhilegr4]
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isWater(AHEAD))
+{
+	mary.hop();  
+}
+mary.turn(RIGHT);
+while (mary.isWater(LEFT))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>On the world, place flowers where they would end up when this program runs.</p>
+<?GRID jwhilegr4 5 5 1-3 E ?>
+------
+
+[jwhilemc]
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isNet(AHEAD))
+{
+	mary.plant();
+	mary.hop();  
+}
+</div>
+<p>and that she starts in this world:</p>
+<?GRID - mcstart 5 1 1-1 E *5-1 ?>
+<p>Which of the pictures below shows where flowers would be after this program runs?</p>
+------
+
+[jwhilemc2]
+<p>Suppose a Jeroo's program has this sequence of instructions:</p>
+<div class="code">
+while (!mary.isNet(AHEAD))
+{
+	mary.hop();  
+	mary.plant();
+}
+</div>
+<p>and that she starts in this world:</p>
+<?GRID - mcstart 5 1 1-1 E *5-1 ?>
+<p>Which of the pictures below shows where flowers would be after this program runs?</p>
+------
+
+[kseqcr]
+<p>Suppose Karel starts in this world:</p>
+<?GRID - start 4 3 1-1 E ?>
+<br/>
+<p>Write a sequence of instructions that makes the world end up like this:</p>
+<?GRID - end 4 3 3-3 N 2-1 3-1 3-2 ?>
+------
+
+[kseqgrid]
+<p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+move();
+move();
+putBeeper();
+turnLeft();
+move();
+putBeeper();
+move();
+putBeeper();
+</div>
+<p>On the world, place beepers where they would end up when this program runs.</p>
+<?GRID kseqgrid 5 5 3-3 N ?>
+------
+
+[kseqgrid2]
+<p>Suppose Karel's program has this sequence of instructions:</p>
+<div class="code">
+move();
+turnLeft();
+move();
+turnLeft();
+putBeeper();
+move();
+putBeeper();
+</div>
+<p>On the world, place beepers where they would end up when this program runs.</p>
+<?GRID kseqgrid2 5 5 3-3 W ?>
+------
+
+[kwallmove]
+<p>Suppose Karel is facing a wall.  What kappens if karel is given a
+<span class="code">move()</span> command?</p>
+------
+
+[kwallturn]
+<p>Suppose there is a wall to the left of Karel.  What happens if Karel is given a
+<span class="code">turnLeft()</span> command?</p>
+------
+
+[rcxbasic1]
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+}
+</div>
+<p>What will the <b>left wheel</b> do when this program runs?</p>
+------
+
+[rcxbasic2]
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+}
+</div>
+<p>What will the <b>right wheel</b> do when this program runs?</p>
+------
+
+[rcxbasic3]
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+	fd(C);
+}
+</div>
+<p>What will the <b>whole robot</b> do when this program runs?</p>
+------
+
+[rcxbasic4]
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+	fd(C);
+	alloff();
+}
+</div>
+<p>What will the <b>whole robot</b> do when this program runs?</p>
+------
+
+[rcxfdbkseq]
+<p>Here is a complete Interactive C program:</p>
+<div class="code">void main()
+{
+	fd(A);
+	fd(C);
+	bk(C);
+	fd(B);
+}
+</div>
+<p>Describe the motion of the whole robot when this program is run.</p>
+------
+
+[rcxleftcr]
+Write a complete Interactive C program to make the robot rotate to the left:
+------
+
+[rcxrightcr]
+Write a complete Interactive C program to make the robot <b>rotate to the right for 5 seconds, then stop</b>:
+------
+
